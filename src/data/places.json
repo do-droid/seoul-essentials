@@ -1,0 +1,676 @@
+[
+  {
+    "id": "kr-toilet-gangnam-001",
+    "type": "toilet",
+    "name": {"ko": "강남역 지하 공중화장실", "en": "Gangnam Station Underground Public Restroom"},
+    "location": {"lat": 37.4979, "lng": 127.0276, "address_ko": "서울특별시 강남구 강남대로 지하396", "address_en": "Underground 396, Gangnam-daero, Gangnam-gu, Seoul", "district": "gangnam", "nearest_station": "강남역 (Gangnam)"},
+    "services": {"has_bidet": false, "has_baby_changing": false, "has_disabled_stall": true, "gender_separated": true},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.95, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-toilet-myeongdong-001",
+    "type": "toilet",
+    "name": {"ko": "명동역 공중화장실", "en": "Myeongdong Station Public Restroom"},
+    "location": {"lat": 37.5609, "lng": 126.9860, "address_ko": "서울특별시 중구 명동길 지하", "address_en": "Underground, Myeongdong-gil, Jung-gu, Seoul", "district": "jung", "nearest_station": "명동역 (Myeongdong)"},
+    "services": {"has_bidet": false, "has_baby_changing": true, "has_disabled_stall": true, "gender_separated": true},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.95, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-toilet-hongdae-001",
+    "type": "toilet",
+    "name": {"ko": "홍대입구역 공중화장실", "en": "Hongik Univ. Station Public Restroom"},
+    "location": {"lat": 37.5571, "lng": 126.9246, "address_ko": "서울특별시 마포구 양화로 지하160", "address_en": "Underground 160, Yanghwa-ro, Mapo-gu, Seoul", "district": "mapo", "nearest_station": "홍대입구역 (Hongik Univ.)"},
+    "services": {"has_bidet": false, "has_baby_changing": false, "has_disabled_stall": true, "gender_separated": true},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.93, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-toilet-seoul-station-001",
+    "type": "toilet",
+    "name": {"ko": "서울역 공중화장실", "en": "Seoul Station Public Restroom"},
+    "location": {"lat": 37.5547, "lng": 126.9706, "address_ko": "서울특별시 용산구 한강대로 405", "address_en": "405, Hangang-daero, Yongsan-gu, Seoul", "district": "yongsan", "nearest_station": "서울역 (Seoul Station)"},
+    "services": {"has_bidet": false, "has_baby_changing": true, "has_disabled_stall": true, "gender_separated": true},
+    "hours": {"open": "05:00", "close": "01:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.95, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-toilet-jamsil-001",
+    "type": "toilet",
+    "name": {"ko": "잠실역 공중화장실", "en": "Jamsil Station Public Restroom"},
+    "location": {"lat": 37.5133, "lng": 127.1001, "address_ko": "서울특별시 송파구 올림픽로 지하265", "address_en": "Underground 265, Olympic-ro, Songpa-gu, Seoul", "district": "songpa", "nearest_station": "잠실역 (Jamsil)"},
+    "services": {"has_bidet": false, "has_baby_changing": true, "has_disabled_stall": true, "gender_separated": true},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.94, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-toilet-itaewon-001",
+    "type": "toilet",
+    "name": {"ko": "이태원역 공중화장실", "en": "Itaewon Station Public Restroom"},
+    "location": {"lat": 37.5346, "lng": 126.9946, "address_ko": "서울특별시 용산구 이태원로 지하177", "address_en": "Underground 177, Itaewon-ro, Yongsan-gu, Seoul", "district": "yongsan", "nearest_station": "이태원역 (Itaewon)"},
+    "services": {"has_bidet": false, "has_baby_changing": false, "has_disabled_stall": true, "gender_separated": true},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.92, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-toilet-gwanghwamun-001",
+    "type": "toilet",
+    "name": {"ko": "광화문광장 공중화장실", "en": "Gwanghwamun Plaza Public Restroom"},
+    "location": {"lat": 37.5720, "lng": 126.9769, "address_ko": "서울특별시 종로구 세종대로 172", "address_en": "172, Sejong-daero, Jongno-gu, Seoul", "district": "jongno", "nearest_station": "광화문역 (Gwanghwamun)"},
+    "services": {"has_bidet": false, "has_baby_changing": true, "has_disabled_stall": true, "gender_separated": true},
+    "hours": {"open": "06:00", "close": "23:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.93, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-toilet-dongdaemun-001",
+    "type": "toilet",
+    "name": {"ko": "동대문역사문화공원역 공중화장실", "en": "Dongdaemun History & Culture Park Station Restroom"},
+    "location": {"lat": 37.5654, "lng": 127.0094, "address_ko": "서울특별시 중구 을지로 지하281", "address_en": "Underground 281, Eulji-ro, Jung-gu, Seoul", "district": "jung", "nearest_station": "동대문역사문화공원역 (Dongdaemun History & Culture Park)"},
+    "services": {"has_bidet": false, "has_baby_changing": false, "has_disabled_stall": true, "gender_separated": true},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.94, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-toilet-insadong-001",
+    "type": "toilet",
+    "name": {"ko": "인사동 공영 화장실", "en": "Insadong Public Restroom"},
+    "location": {"lat": 37.5743, "lng": 126.9856, "address_ko": "서울특별시 종로구 인사동길 35-4", "address_en": "35-4, Insadong-gil, Jongno-gu, Seoul", "district": "jongno", "nearest_station": "안국역 (Anguk)"},
+    "services": {"has_bidet": false, "has_baby_changing": false, "has_disabled_stall": true, "gender_separated": true},
+    "hours": {"open": "06:00", "close": "22:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.90, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-toilet-yeouido-001",
+    "type": "toilet",
+    "name": {"ko": "여의도공원 공중화장실", "en": "Yeouido Park Public Restroom"},
+    "location": {"lat": 37.5264, "lng": 126.9227, "address_ko": "서울특별시 영등포구 여의공원로 68", "address_en": "68, Yeoui-gongwon-ro, Yeongdeungpo-gu, Seoul", "district": "yeongdeungpo", "nearest_station": "여의나루역 (Yeouinaru)"},
+    "services": {"has_bidet": false, "has_baby_changing": true, "has_disabled_stall": true, "gender_separated": true},
+    "hours": {"open": "06:00", "close": "22:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.92, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-toilet-sinchon-001",
+    "type": "toilet",
+    "name": {"ko": "신촌역 공중화장실", "en": "Sinchon Station Public Restroom"},
+    "location": {"lat": 37.5553, "lng": 126.9372, "address_ko": "서울특별시 서대문구 신촌역로 지하18", "address_en": "Underground 18, Sinchonyeok-ro, Seodaemun-gu, Seoul", "district": "seodaemun", "nearest_station": "신촌역 (Sinchon)"},
+    "services": {"has_bidet": false, "has_baby_changing": false, "has_disabled_stall": true, "gender_separated": true},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.93, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-toilet-gyeongbokgung-001",
+    "type": "toilet",
+    "name": {"ko": "경복궁역 공중화장실", "en": "Gyeongbokgung Station Public Restroom"},
+    "location": {"lat": 37.5759, "lng": 126.9733, "address_ko": "서울특별시 종로구 사직로 지하130", "address_en": "Underground 130, Sajik-ro, Jongno-gu, Seoul", "district": "jongno", "nearest_station": "경복궁역 (Gyeongbokgung)"},
+    "services": {"has_bidet": false, "has_baby_changing": true, "has_disabled_stall": true, "gender_separated": true},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.94, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-toilet-gangnam-002",
+    "type": "toilet",
+    "name": {"ko": "코엑스 공중화장실", "en": "COEX Mall Public Restroom"},
+    "location": {"lat": 37.5120, "lng": 127.0590, "address_ko": "서울특별시 강남구 영동대로 513", "address_en": "513, Yeongdong-daero, Gangnam-gu, Seoul", "district": "gangnam", "nearest_station": "삼성역 (Samsung)"},
+    "services": {"has_bidet": true, "has_baby_changing": true, "has_disabled_stall": true, "gender_separated": true},
+    "hours": {"open": "06:00", "close": "22:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.96, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-toilet-namsan-001",
+    "type": "toilet",
+    "name": {"ko": "남산타워 전망대 화장실", "en": "N Seoul Tower Observatory Restroom"},
+    "location": {"lat": 37.5512, "lng": 126.9882, "address_ko": "서울특별시 용산구 남산공원길 105", "address_en": "105, Namsangongwon-gil, Yongsan-gu, Seoul", "district": "yongsan", "nearest_station": "명동역 (Myeongdong)"},
+    "services": {"has_bidet": false, "has_baby_changing": true, "has_disabled_stall": true, "gender_separated": true},
+    "hours": {"open": "09:00", "close": "23:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.95, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-toilet-bukchon-001",
+    "type": "toilet",
+    "name": {"ko": "북촌한옥마을 공중화장실", "en": "Bukchon Hanok Village Public Restroom"},
+    "location": {"lat": 37.5826, "lng": 126.9849, "address_ko": "서울특별시 종로구 계동길 37", "address_en": "37, Gyedong-gil, Jongno-gu, Seoul", "district": "jongno", "nearest_station": "안국역 (Anguk)"},
+    "services": {"has_bidet": false, "has_baby_changing": false, "has_disabled_stall": true, "gender_separated": true},
+    "hours": {"open": "06:00", "close": "22:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": false, "elevator_nearby": false},
+    "trust_score": 0.91, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+
+  {
+    "id": "kr-pharmacy-gangnam-001",
+    "type": "pharmacy",
+    "name": {"ko": "온누리약국 강남점", "en": "Onnuri Pharmacy Gangnam"},
+    "location": {"lat": 37.4985, "lng": 127.0282, "address_ko": "서울특별시 강남구 강남대로 382", "address_en": "382, Gangnam-daero, Gangnam-gu, Seoul", "district": "gangnam", "nearest_station": "강남역 (Gangnam)"},
+    "services": {"english_spoken": true, "japanese_spoken": false, "chinese_spoken": false, "open_24h": false, "tax_refund": true},
+    "hours": {"open": "09:00", "close": "22:00", "is_24h": false, "closed_days": ["sunday"]},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.93, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-pharmacy-itaewon-001",
+    "type": "pharmacy",
+    "name": {"ko": "이태원 그린약국", "en": "Itaewon Green Pharmacy"},
+    "location": {"lat": 37.5340, "lng": 126.9948, "address_ko": "서울특별시 용산구 이태원로 181", "address_en": "181, Itaewon-ro, Yongsan-gu, Seoul", "district": "yongsan", "nearest_station": "이태원역 (Itaewon)"},
+    "services": {"english_spoken": true, "japanese_spoken": false, "chinese_spoken": false, "open_24h": false, "tax_refund": true},
+    "hours": {"open": "09:00", "close": "21:00", "is_24h": false, "closed_days": ["sunday"]},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.94, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-pharmacy-myeongdong-001",
+    "type": "pharmacy",
+    "name": {"ko": "명동 올리브약국", "en": "Myeongdong Olive Pharmacy"},
+    "location": {"lat": 37.5636, "lng": 126.9850, "address_ko": "서울특별시 중구 명동8가길 27", "address_en": "27, Myeongdong 8-ga-gil, Jung-gu, Seoul", "district": "jung", "nearest_station": "명동역 (Myeongdong)"},
+    "services": {"english_spoken": true, "japanese_spoken": true, "chinese_spoken": true, "open_24h": false, "tax_refund": true},
+    "hours": {"open": "09:00", "close": "22:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.96, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-pharmacy-hongdae-001",
+    "type": "pharmacy",
+    "name": {"ko": "홍대 세브란스약국", "en": "Hongdae Severance Pharmacy"},
+    "location": {"lat": 37.5563, "lng": 126.9234, "address_ko": "서울특별시 마포구 양화로 153", "address_en": "153, Yanghwa-ro, Mapo-gu, Seoul", "district": "mapo", "nearest_station": "홍대입구역 (Hongik Univ.)"},
+    "services": {"english_spoken": true, "japanese_spoken": false, "chinese_spoken": false, "open_24h": false, "tax_refund": false},
+    "hours": {"open": "09:00", "close": "21:30", "is_24h": false, "closed_days": ["sunday"]},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.92, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-pharmacy-jongno-001",
+    "type": "pharmacy",
+    "name": {"ko": "종로 연세약국", "en": "Jongno Yonsei Pharmacy"},
+    "location": {"lat": 37.5703, "lng": 126.9920, "address_ko": "서울특별시 종로구 종로 104", "address_en": "104, Jong-ro, Jongno-gu, Seoul", "district": "jongno", "nearest_station": "종각역 (Jonggak)"},
+    "services": {"english_spoken": true, "japanese_spoken": false, "chinese_spoken": false, "open_24h": true, "tax_refund": false},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.91, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-pharmacy-gangnam-002",
+    "type": "pharmacy",
+    "name": {"ko": "강남 365 약국", "en": "Gangnam 365 Pharmacy"},
+    "location": {"lat": 37.5010, "lng": 127.0245, "address_ko": "서울특별시 강남구 테헤란로 110", "address_en": "110, Teheran-ro, Gangnam-gu, Seoul", "district": "gangnam", "nearest_station": "강남역 (Gangnam)"},
+    "services": {"english_spoken": true, "japanese_spoken": false, "chinese_spoken": true, "open_24h": true, "tax_refund": true},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.95, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-pharmacy-sinchon-001",
+    "type": "pharmacy",
+    "name": {"ko": "신촌 현대약국", "en": "Sinchon Hyundai Pharmacy"},
+    "location": {"lat": 37.5557, "lng": 126.9369, "address_ko": "서울특별시 서대문구 신촌로 83", "address_en": "83, Sinchon-ro, Seodaemun-gu, Seoul", "district": "seodaemun", "nearest_station": "신촌역 (Sinchon)"},
+    "services": {"english_spoken": true, "japanese_spoken": false, "chinese_spoken": false, "open_24h": false, "tax_refund": false},
+    "hours": {"open": "09:00", "close": "22:00", "is_24h": false, "closed_days": ["sunday"]},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.90, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-pharmacy-dongdaemun-001",
+    "type": "pharmacy",
+    "name": {"ko": "동대문 대학약국", "en": "Dongdaemun University Pharmacy"},
+    "location": {"lat": 37.5661, "lng": 127.0092, "address_ko": "서울특별시 중구 을지로 275", "address_en": "275, Eulji-ro, Jung-gu, Seoul", "district": "jung", "nearest_station": "동대문역사문화공원역 (Dongdaemun History & Culture Park)"},
+    "services": {"english_spoken": true, "japanese_spoken": false, "chinese_spoken": true, "open_24h": false, "tax_refund": true},
+    "hours": {"open": "08:30", "close": "21:00", "is_24h": false, "closed_days": ["sunday"]},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.91, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-pharmacy-jamsil-001",
+    "type": "pharmacy",
+    "name": {"ko": "잠실 롯데약국", "en": "Jamsil Lotte Pharmacy"},
+    "location": {"lat": 37.5115, "lng": 127.0981, "address_ko": "서울특별시 송파구 올림픽로 240", "address_en": "240, Olympic-ro, Songpa-gu, Seoul", "district": "songpa", "nearest_station": "잠실역 (Jamsil)"},
+    "services": {"english_spoken": true, "japanese_spoken": true, "chinese_spoken": true, "open_24h": false, "tax_refund": true},
+    "hours": {"open": "10:00", "close": "22:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.95, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-pharmacy-yeongdeungpo-001",
+    "type": "pharmacy",
+    "name": {"ko": "영등포 시간약국", "en": "Yeongdeungpo Times Pharmacy"},
+    "location": {"lat": 37.5156, "lng": 126.9074, "address_ko": "서울특별시 영등포구 영등포로 지하 36길", "address_en": "36-gil, Yeongdeungpo-ro, Yeongdeungpo-gu, Seoul", "district": "yeongdeungpo", "nearest_station": "영등포시장역 (Yeongdeungpo Market)"},
+    "services": {"english_spoken": false, "japanese_spoken": false, "chinese_spoken": false, "open_24h": true, "tax_refund": false},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.89, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-pharmacy-gangbuk-001",
+    "type": "pharmacy",
+    "name": {"ko": "서울역 24시 약국", "en": "Seoul Station 24hr Pharmacy"},
+    "location": {"lat": 37.5559, "lng": 126.9723, "address_ko": "서울특별시 용산구 한강대로 413", "address_en": "413, Hangang-daero, Yongsan-gu, Seoul", "district": "yongsan", "nearest_station": "서울역 (Seoul Station)"},
+    "services": {"english_spoken": true, "japanese_spoken": false, "chinese_spoken": false, "open_24h": true, "tax_refund": false},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.93, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-pharmacy-itaewon-002",
+    "type": "pharmacy",
+    "name": {"ko": "이태원 해밀턴약국", "en": "Itaewon Hamilton Pharmacy"},
+    "location": {"lat": 37.5348, "lng": 126.9930, "address_ko": "서울특별시 용산구 이태원로 179", "address_en": "179, Itaewon-ro, Yongsan-gu, Seoul", "district": "yongsan", "nearest_station": "이태원역 (Itaewon)"},
+    "services": {"english_spoken": true, "japanese_spoken": false, "chinese_spoken": false, "open_24h": false, "tax_refund": true},
+    "hours": {"open": "09:00", "close": "23:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": false, "elevator_nearby": false},
+    "trust_score": 0.92, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-pharmacy-myeongdong-002",
+    "type": "pharmacy",
+    "name": {"ko": "명동 24시 약국", "en": "Myeongdong 24hr Pharmacy"},
+    "location": {"lat": 37.5625, "lng": 126.9866, "address_ko": "서울특별시 중구 명동길 14", "address_en": "14, Myeongdong-gil, Jung-gu, Seoul", "district": "jung", "nearest_station": "명동역 (Myeongdong)"},
+    "services": {"english_spoken": true, "japanese_spoken": true, "chinese_spoken": true, "open_24h": true, "tax_refund": true},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.95, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-pharmacy-gangnam-003",
+    "type": "pharmacy",
+    "name": {"ko": "선릉역 메디팜약국", "en": "Seolleung Station Medipharm Pharmacy"},
+    "location": {"lat": 37.5045, "lng": 127.0490, "address_ko": "서울특별시 강남구 테헤란로 340", "address_en": "340, Teheran-ro, Gangnam-gu, Seoul", "district": "gangnam", "nearest_station": "선릉역 (Seolleung)"},
+    "services": {"english_spoken": true, "japanese_spoken": false, "chinese_spoken": false, "open_24h": false, "tax_refund": true},
+    "hours": {"open": "08:30", "close": "20:00", "is_24h": false, "closed_days": ["saturday", "sunday"]},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.91, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+
+  {
+    "id": "kr-wifi-myeongdong-001",
+    "type": "wifi",
+    "name": {"ko": "명동 중앙로 공공 와이파이", "en": "Myeongdong Main Street Public WiFi"},
+    "location": {"lat": 37.5631, "lng": 126.9856, "address_ko": "서울특별시 중구 명동길 일대", "address_en": "Myeongdong-gil area, Jung-gu, Seoul", "district": "jung", "nearest_station": "명동역 (Myeongdong)"},
+    "services": {"ssid": "Seoul_Free_WiFi", "speed_mbps": 50, "requires_login": false, "indoor": false},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.90, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-wifi-hongdae-001",
+    "type": "wifi",
+    "name": {"ko": "홍대 걷고싶은거리 공공 와이파이", "en": "Hongdae Walking Street Public WiFi"},
+    "location": {"lat": 37.5563, "lng": 126.9240, "address_ko": "서울특별시 마포구 어울마당로 일대", "address_en": "Eoulmadang-ro area, Mapo-gu, Seoul", "district": "mapo", "nearest_station": "홍대입구역 (Hongik Univ.)"},
+    "services": {"ssid": "Seoul_Free_WiFi", "speed_mbps": 50, "requires_login": false, "indoor": false},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.89, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-wifi-gangnam-001",
+    "type": "wifi",
+    "name": {"ko": "강남역 지하상가 공공 와이파이", "en": "Gangnam Station Underground Mall Public WiFi"},
+    "location": {"lat": 37.4979, "lng": 127.0276, "address_ko": "서울특별시 강남구 강남대로 지하396", "address_en": "Underground 396, Gangnam-daero, Gangnam-gu, Seoul", "district": "gangnam", "nearest_station": "강남역 (Gangnam)"},
+    "services": {"ssid": "Seoul_Free_WiFi", "speed_mbps": 100, "requires_login": false, "indoor": true},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.92, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-wifi-insadong-001",
+    "type": "wifi",
+    "name": {"ko": "인사동 관광특구 공공 와이파이", "en": "Insadong Tourist Zone Public WiFi"},
+    "location": {"lat": 37.5743, "lng": 126.9856, "address_ko": "서울특별시 종로구 인사동길 일대", "address_en": "Insadong-gil area, Jongno-gu, Seoul", "district": "jongno", "nearest_station": "안국역 (Anguk)"},
+    "services": {"ssid": "Seoul_Free_WiFi", "speed_mbps": 50, "requires_login": false, "indoor": false},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.90, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-wifi-itaewon-001",
+    "type": "wifi",
+    "name": {"ko": "이태원 관광특구 공공 와이파이", "en": "Itaewon Tourist Zone Public WiFi"},
+    "location": {"lat": 37.5346, "lng": 126.9946, "address_ko": "서울특별시 용산구 이태원로 일대", "address_en": "Itaewon-ro area, Yongsan-gu, Seoul", "district": "yongsan", "nearest_station": "이태원역 (Itaewon)"},
+    "services": {"ssid": "Seoul_Free_WiFi", "speed_mbps": 50, "requires_login": false, "indoor": false},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.90, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-wifi-gwanghwamun-001",
+    "type": "wifi",
+    "name": {"ko": "광화문광장 공공 와이파이", "en": "Gwanghwamun Plaza Public WiFi"},
+    "location": {"lat": 37.5720, "lng": 126.9769, "address_ko": "서울특별시 종로구 세종대로 172", "address_en": "172, Sejong-daero, Jongno-gu, Seoul", "district": "jongno", "nearest_station": "광화문역 (Gwanghwamun)"},
+    "services": {"ssid": "Seoul_Free_WiFi", "speed_mbps": 100, "requires_login": false, "indoor": false},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.93, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-wifi-coex-001",
+    "type": "wifi",
+    "name": {"ko": "코엑스몰 공공 와이파이", "en": "COEX Mall Public WiFi"},
+    "location": {"lat": 37.5120, "lng": 127.0590, "address_ko": "서울특별시 강남구 영동대로 513", "address_en": "513, Yeongdong-daero, Gangnam-gu, Seoul", "district": "gangnam", "nearest_station": "삼성역 (Samsung)"},
+    "services": {"ssid": "COEX_Free_WiFi", "speed_mbps": 200, "requires_login": true, "indoor": true},
+    "hours": {"open": "06:00", "close": "22:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.95, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-wifi-seoul-station-001",
+    "type": "wifi",
+    "name": {"ko": "서울역 대합실 공공 와이파이", "en": "Seoul Station Waiting Hall Public WiFi"},
+    "location": {"lat": 37.5547, "lng": 126.9706, "address_ko": "서울특별시 용산구 한강대로 405", "address_en": "405, Hangang-daero, Yongsan-gu, Seoul", "district": "yongsan", "nearest_station": "서울역 (Seoul Station)"},
+    "services": {"ssid": "Seoul_Free_WiFi", "speed_mbps": 100, "requires_login": false, "indoor": true},
+    "hours": {"open": "04:00", "close": "01:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.94, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-wifi-jamsil-001",
+    "type": "wifi",
+    "name": {"ko": "잠실 롯데월드몰 공공 와이파이", "en": "Jamsil Lotte World Mall Public WiFi"},
+    "location": {"lat": 37.5133, "lng": 127.1001, "address_ko": "서울특별시 송파구 올림픽로 300", "address_en": "300, Olympic-ro, Songpa-gu, Seoul", "district": "songpa", "nearest_station": "잠실역 (Jamsil)"},
+    "services": {"ssid": "Lotte_Free_WiFi", "speed_mbps": 200, "requires_login": true, "indoor": true},
+    "hours": {"open": "10:00", "close": "22:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.95, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-wifi-dongdaemun-001",
+    "type": "wifi",
+    "name": {"ko": "동대문디자인플라자 공공 와이파이", "en": "Dongdaemun Design Plaza Public WiFi"},
+    "location": {"lat": 37.5670, "lng": 127.0094, "address_ko": "서울특별시 중구 을지로 281", "address_en": "281, Eulji-ro, Jung-gu, Seoul", "district": "jung", "nearest_station": "동대문역사문화공원역 (Dongdaemun History & Culture Park)"},
+    "services": {"ssid": "DDP_Free_WiFi", "speed_mbps": 100, "requires_login": true, "indoor": true},
+    "hours": {"open": "10:00", "close": "21:00", "is_24h": false, "closed_days": ["monday"]},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.94, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-wifi-yeouido-001",
+    "type": "wifi",
+    "name": {"ko": "여의도 IFC몰 공공 와이파이", "en": "Yeouido IFC Mall Public WiFi"},
+    "location": {"lat": 37.5252, "lng": 126.9256, "address_ko": "서울특별시 영등포구 국제금융로 10", "address_en": "10, Gukjegeumyung-ro, Yeongdeungpo-gu, Seoul", "district": "yeongdeungpo", "nearest_station": "여의도역 (Yeouido)"},
+    "services": {"ssid": "IFC_Free_WiFi", "speed_mbps": 200, "requires_login": true, "indoor": true},
+    "hours": {"open": "10:00", "close": "22:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.95, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-wifi-bukchon-001",
+    "type": "wifi",
+    "name": {"ko": "북촌한옥마을 공공 와이파이", "en": "Bukchon Hanok Village Public WiFi"},
+    "location": {"lat": 37.5826, "lng": 126.9849, "address_ko": "서울특별시 종로구 계동길 37", "address_en": "37, Gyedong-gil, Jongno-gu, Seoul", "district": "jongno", "nearest_station": "안국역 (Anguk)"},
+    "services": {"ssid": "Seoul_Free_WiFi", "speed_mbps": 30, "requires_login": false, "indoor": false},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": false, "elevator_nearby": false},
+    "trust_score": 0.88, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-wifi-namsan-001",
+    "type": "wifi",
+    "name": {"ko": "남산타워 공공 와이파이", "en": "N Seoul Tower Public WiFi"},
+    "location": {"lat": 37.5512, "lng": 126.9882, "address_ko": "서울특별시 용산구 남산공원길 105", "address_en": "105, Namsangongwon-gil, Yongsan-gu, Seoul", "district": "yongsan", "nearest_station": "명동역 (Myeongdong)"},
+    "services": {"ssid": "Namsan_Free_WiFi", "speed_mbps": 50, "requires_login": true, "indoor": false},
+    "hours": {"open": "09:00", "close": "23:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.91, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-wifi-sinchon-001",
+    "type": "wifi",
+    "name": {"ko": "신촌 연세로 공공 와이파이", "en": "Sinchon Yonsei-ro Public WiFi"},
+    "location": {"lat": 37.5571, "lng": 126.9368, "address_ko": "서울특별시 서대문구 연세로 일대", "address_en": "Yonsei-ro area, Seodaemun-gu, Seoul", "district": "seodaemun", "nearest_station": "신촌역 (Sinchon)"},
+    "services": {"ssid": "Seoul_Free_WiFi", "speed_mbps": 50, "requires_login": false, "indoor": false},
+    "hours": {"open": "00:00", "close": "24:00", "is_24h": true, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.89, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+
+  {
+    "id": "kr-aed-gangnam-001",
+    "type": "aed",
+    "name": {"ko": "강남역 2호선 대합실 AED", "en": "Gangnam Station Line 2 AED"},
+    "location": {"lat": 37.4979, "lng": 127.0276, "address_ko": "서울특별시 강남구 강남대로 지하396", "address_en": "Underground 396, Gangnam-daero, Gangnam-gu, Seoul", "district": "gangnam", "nearest_station": "강남역 (Gangnam)"},
+    "services": {"location_detail": "2호선 대합실 안내데스크 옆", "location_detail_en": "Next to Line 2 concourse information desk", "available_24h": false, "available_hours": "05:30-24:00"},
+    "hours": {"open": "05:30", "close": "24:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.97, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-aed-myeongdong-001",
+    "type": "aed",
+    "name": {"ko": "명동역 4호선 대합실 AED", "en": "Myeongdong Station Line 4 AED"},
+    "location": {"lat": 37.5609, "lng": 126.9860, "address_ko": "서울특별시 중구 명동길 지하", "address_en": "Underground, Myeongdong-gil, Jung-gu, Seoul", "district": "jung", "nearest_station": "명동역 (Myeongdong)"},
+    "services": {"location_detail": "4호선 대합실 역무실 앞", "location_detail_en": "In front of Line 4 concourse station office", "available_24h": false, "available_hours": "05:30-24:00"},
+    "hours": {"open": "05:30", "close": "24:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.97, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-aed-seoul-station-001",
+    "type": "aed",
+    "name": {"ko": "서울역 1층 로비 AED", "en": "Seoul Station 1F Lobby AED"},
+    "location": {"lat": 37.5547, "lng": 126.9706, "address_ko": "서울특별시 용산구 한강대로 405", "address_en": "405, Hangang-daero, Yongsan-gu, Seoul", "district": "yongsan", "nearest_station": "서울역 (Seoul Station)"},
+    "services": {"location_detail": "1층 로비 중앙 안내데스크 옆", "location_detail_en": "Next to 1F lobby central information desk", "available_24h": false, "available_hours": "05:00-01:00"},
+    "hours": {"open": "05:00", "close": "01:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.98, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-aed-hongdae-001",
+    "type": "aed",
+    "name": {"ko": "홍대입구역 대합실 AED", "en": "Hongik Univ. Station Concourse AED"},
+    "location": {"lat": 37.5571, "lng": 126.9246, "address_ko": "서울특별시 마포구 양화로 지하160", "address_en": "Underground 160, Yanghwa-ro, Mapo-gu, Seoul", "district": "mapo", "nearest_station": "홍대입구역 (Hongik Univ.)"},
+    "services": {"location_detail": "대합실 역무실 옆", "location_detail_en": "Next to concourse station office", "available_24h": false, "available_hours": "05:30-24:00"},
+    "hours": {"open": "05:30", "close": "24:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.96, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-aed-jamsil-001",
+    "type": "aed",
+    "name": {"ko": "잠실역 대합실 AED", "en": "Jamsil Station Concourse AED"},
+    "location": {"lat": 37.5133, "lng": 127.1001, "address_ko": "서울특별시 송파구 올림픽로 지하265", "address_en": "Underground 265, Olympic-ro, Songpa-gu, Seoul", "district": "songpa", "nearest_station": "잠실역 (Jamsil)"},
+    "services": {"location_detail": "2호선 대합실 안내데스크 옆", "location_detail_en": "Next to Line 2 concourse information desk", "available_24h": false, "available_hours": "05:30-24:00"},
+    "hours": {"open": "05:30", "close": "24:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.96, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-aed-coex-001",
+    "type": "aed",
+    "name": {"ko": "코엑스몰 1층 안내데스크 AED", "en": "COEX Mall 1F Information Desk AED"},
+    "location": {"lat": 37.5120, "lng": 127.0590, "address_ko": "서울특별시 강남구 영동대로 513", "address_en": "513, Yeongdong-daero, Gangnam-gu, Seoul", "district": "gangnam", "nearest_station": "삼성역 (Samsung)"},
+    "services": {"location_detail": "1층 중앙 안내데스크", "location_detail_en": "1F central information desk", "available_24h": false, "available_hours": "10:00-22:00"},
+    "hours": {"open": "10:00", "close": "22:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.96, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-aed-itaewon-001",
+    "type": "aed",
+    "name": {"ko": "이태원역 대합실 AED", "en": "Itaewon Station Concourse AED"},
+    "location": {"lat": 37.5346, "lng": 126.9946, "address_ko": "서울특별시 용산구 이태원로 지하177", "address_en": "Underground 177, Itaewon-ro, Yongsan-gu, Seoul", "district": "yongsan", "nearest_station": "이태원역 (Itaewon)"},
+    "services": {"location_detail": "역무실 앞", "location_detail_en": "In front of station office", "available_24h": false, "available_hours": "05:30-24:00"},
+    "hours": {"open": "05:30", "close": "24:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.95, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-aed-jongno-001",
+    "type": "aed",
+    "name": {"ko": "종로3가역 대합실 AED", "en": "Jongno 3-ga Station Concourse AED"},
+    "location": {"lat": 37.5710, "lng": 126.9920, "address_ko": "서울특별시 종로구 종로 지하 130", "address_en": "Underground 130, Jong-ro, Jongno-gu, Seoul", "district": "jongno", "nearest_station": "종로3가역 (Jongno 3-ga)"},
+    "services": {"location_detail": "1호선 대합실 역무실 옆", "location_detail_en": "Next to Line 1 concourse station office", "available_24h": false, "available_hours": "05:30-24:00"},
+    "hours": {"open": "05:30", "close": "24:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.96, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-aed-lotte-world-001",
+    "type": "aed",
+    "name": {"ko": "롯데월드 1층 안전센터 AED", "en": "Lotte World 1F Safety Center AED"},
+    "location": {"lat": 37.5111, "lng": 127.0980, "address_ko": "서울특별시 송파구 올림픽로 240", "address_en": "240, Olympic-ro, Songpa-gu, Seoul", "district": "songpa", "nearest_station": "잠실역 (Jamsil)"},
+    "services": {"location_detail": "어드벤처 1층 안전센터", "location_detail_en": "Adventure 1F Safety Center", "available_24h": false, "available_hours": "09:30-22:00"},
+    "hours": {"open": "09:30", "close": "22:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.97, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-aed-gwanghwamun-001",
+    "type": "aed",
+    "name": {"ko": "광화문역 대합실 AED", "en": "Gwanghwamun Station Concourse AED"},
+    "location": {"lat": 37.5710, "lng": 126.9769, "address_ko": "서울특별시 종로구 세종대로 지하 172", "address_en": "Underground 172, Sejong-daero, Jongno-gu, Seoul", "district": "jongno", "nearest_station": "광화문역 (Gwanghwamun)"},
+    "services": {"location_detail": "5호선 대합실 역무실 앞", "location_detail_en": "In front of Line 5 concourse station office", "available_24h": false, "available_hours": "05:30-24:00"},
+    "hours": {"open": "05:30", "close": "24:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.96, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-aed-yeouido-001",
+    "type": "aed",
+    "name": {"ko": "여의도 IFC몰 B1 AED", "en": "Yeouido IFC Mall B1 AED"},
+    "location": {"lat": 37.5252, "lng": 126.9256, "address_ko": "서울특별시 영등포구 국제금융로 10", "address_en": "10, Gukjegeumyung-ro, Yeongdeungpo-gu, Seoul", "district": "yeongdeungpo", "nearest_station": "여의도역 (Yeouido)"},
+    "services": {"location_detail": "B1 안내데스크 옆", "location_detail_en": "Next to B1 information desk", "available_24h": false, "available_hours": "10:00-22:00"},
+    "hours": {"open": "10:00", "close": "22:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.95, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-aed-sinchon-001",
+    "type": "aed",
+    "name": {"ko": "신촌역 대합실 AED", "en": "Sinchon Station Concourse AED"},
+    "location": {"lat": 37.5553, "lng": 126.9372, "address_ko": "서울특별시 서대문구 신촌역로 지하18", "address_en": "Underground 18, Sinchonyeok-ro, Seodaemun-gu, Seoul", "district": "seodaemun", "nearest_station": "신촌역 (Sinchon)"},
+    "services": {"location_detail": "2호선 대합실 역무실 옆", "location_detail_en": "Next to Line 2 concourse station office", "available_24h": false, "available_hours": "05:30-24:00"},
+    "hours": {"open": "05:30", "close": "24:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.95, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-aed-dongdaemun-001",
+    "type": "aed",
+    "name": {"ko": "동대문디자인플라자 1층 AED", "en": "DDP 1F AED"},
+    "location": {"lat": 37.5670, "lng": 127.0094, "address_ko": "서울특별시 중구 을지로 281", "address_en": "281, Eulji-ro, Jung-gu, Seoul", "district": "jung", "nearest_station": "동대문역사문화공원역 (Dongdaemun History & Culture Park)"},
+    "services": {"location_detail": "1층 안내데스크", "location_detail_en": "1F information desk", "available_24h": false, "available_hours": "10:00-21:00"},
+    "hours": {"open": "10:00", "close": "21:00", "is_24h": false, "closed_days": ["monday"]},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.94, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-aed-express-bus-001",
+    "type": "aed",
+    "name": {"ko": "고속터미널역 대합실 AED", "en": "Express Bus Terminal Station AED"},
+    "location": {"lat": 37.5049, "lng": 127.0049, "address_ko": "서울특별시 서초구 신반포로 지하188", "address_en": "Underground 188, Sinbanpo-ro, Seocho-gu, Seoul", "district": "seocho", "nearest_station": "고속터미널역 (Express Bus Terminal)"},
+    "services": {"location_detail": "3호선 대합실 역무실 앞", "location_detail_en": "In front of Line 3 concourse station office", "available_24h": false, "available_hours": "05:30-24:00"},
+    "hours": {"open": "05:30", "close": "24:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.96, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+
+  {
+    "id": "kr-tourist-info-myeongdong-001",
+    "type": "tourist_info",
+    "name": {"ko": "명동 관광안내소", "en": "Myeongdong Tourist Information Center"},
+    "location": {"lat": 37.5636, "lng": 126.9827, "address_ko": "서울특별시 중구 명동10길 29", "address_en": "29, Myeongdong 10-gil, Jung-gu, Seoul", "district": "jung", "nearest_station": "명동역 (Myeongdong)"},
+    "services": {"languages": ["ko", "en", "ja", "zh"], "has_map": true, "has_wifi": true, "luggage_storage": false, "currency_exchange": false},
+    "hours": {"open": "09:00", "close": "20:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.98, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-tourist-info-insadong-001",
+    "type": "tourist_info",
+    "name": {"ko": "인사동 관광안내소", "en": "Insadong Tourist Information Center"},
+    "location": {"lat": 37.5741, "lng": 126.9859, "address_ko": "서울특별시 종로구 인사동길 62", "address_en": "62, Insadong-gil, Jongno-gu, Seoul", "district": "jongno", "nearest_station": "안국역 (Anguk)"},
+    "services": {"languages": ["ko", "en", "ja", "zh"], "has_map": true, "has_wifi": true, "luggage_storage": false, "currency_exchange": false},
+    "hours": {"open": "09:00", "close": "18:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.97, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-tourist-info-hongdae-001",
+    "type": "tourist_info",
+    "name": {"ko": "홍대 관광안내소", "en": "Hongdae Tourist Information Center"},
+    "location": {"lat": 37.5566, "lng": 126.9239, "address_ko": "서울특별시 마포구 어울마당로 144", "address_en": "144, Eoulmadang-ro, Mapo-gu, Seoul", "district": "mapo", "nearest_station": "홍대입구역 (Hongik Univ.)"},
+    "services": {"languages": ["ko", "en", "ja", "zh"], "has_map": true, "has_wifi": true, "luggage_storage": false, "currency_exchange": false},
+    "hours": {"open": "10:00", "close": "22:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.96, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-tourist-info-itaewon-001",
+    "type": "tourist_info",
+    "name": {"ko": "이태원 관광안내소", "en": "Itaewon Tourist Information Center"},
+    "location": {"lat": 37.5344, "lng": 126.9945, "address_ko": "서울특별시 용산구 이태원로 177", "address_en": "177, Itaewon-ro, Yongsan-gu, Seoul", "district": "yongsan", "nearest_station": "이태원역 (Itaewon)"},
+    "services": {"languages": ["ko", "en", "ja", "zh"], "has_map": true, "has_wifi": true, "luggage_storage": false, "currency_exchange": false},
+    "hours": {"open": "09:00", "close": "18:00", "is_24h": false, "closed_days": ["sunday"]},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.95, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-tourist-info-gangnam-001",
+    "type": "tourist_info",
+    "name": {"ko": "강남 관광정보센터", "en": "Gangnam Tourist Information Center"},
+    "location": {"lat": 37.4979, "lng": 127.0286, "address_ko": "서울특별시 강남구 강남대로 지하 406", "address_en": "Underground 406, Gangnam-daero, Gangnam-gu, Seoul", "district": "gangnam", "nearest_station": "강남역 (Gangnam)"},
+    "services": {"languages": ["ko", "en", "ja", "zh"], "has_map": true, "has_wifi": true, "luggage_storage": false, "currency_exchange": false},
+    "hours": {"open": "10:00", "close": "22:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.97, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-tourist-info-dongdaemun-001",
+    "type": "tourist_info",
+    "name": {"ko": "동대문 관광안내소", "en": "Dongdaemun Tourist Information Center"},
+    "location": {"lat": 37.5707, "lng": 127.0094, "address_ko": "서울특별시 종로구 종로 288", "address_en": "288, Jong-ro, Jongno-gu, Seoul", "district": "jongno", "nearest_station": "동대문역 (Dongdaemun)"},
+    "services": {"languages": ["ko", "en", "ja", "zh"], "has_map": true, "has_wifi": true, "luggage_storage": false, "currency_exchange": false},
+    "hours": {"open": "09:00", "close": "18:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.95, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-tourist-info-cheonggyecheon-001",
+    "type": "tourist_info",
+    "name": {"ko": "청계천 관광안내소", "en": "Cheonggyecheon Tourist Information Center"},
+    "location": {"lat": 37.5694, "lng": 126.9784, "address_ko": "서울특별시 종로구 서린동 149", "address_en": "149, Seorin-dong, Jongno-gu, Seoul", "district": "jongno", "nearest_station": "광화문역 (Gwanghwamun)"},
+    "services": {"languages": ["ko", "en", "ja", "zh"], "has_map": true, "has_wifi": true, "luggage_storage": false, "currency_exchange": false},
+    "hours": {"open": "09:00", "close": "21:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.96, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-tourist-info-jamsil-001",
+    "type": "tourist_info",
+    "name": {"ko": "잠실 관광안내소", "en": "Jamsil Tourist Information Center"},
+    "location": {"lat": 37.5133, "lng": 127.1000, "address_ko": "서울특별시 송파구 올림픽로 25", "address_en": "25, Olympic-ro, Songpa-gu, Seoul", "district": "songpa", "nearest_station": "잠실역 (Jamsil)"},
+    "services": {"languages": ["ko", "en", "ja"], "has_map": true, "has_wifi": true, "luggage_storage": true, "currency_exchange": false},
+    "hours": {"open": "09:00", "close": "18:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.95, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-tourist-info-seoul-station-001",
+    "type": "tourist_info",
+    "name": {"ko": "서울역 관광안내소", "en": "Seoul Station Tourist Information Center"},
+    "location": {"lat": 37.5547, "lng": 126.9706, "address_ko": "서울특별시 용산구 한강대로 405", "address_en": "405, Hangang-daero, Yongsan-gu, Seoul", "district": "yongsan", "nearest_station": "서울역 (Seoul Station)"},
+    "services": {"languages": ["ko", "en", "ja", "zh"], "has_map": true, "has_wifi": true, "luggage_storage": true, "currency_exchange": true},
+    "hours": {"open": "09:00", "close": "20:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": true},
+    "trust_score": 0.98, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "id": "kr-tourist-info-gwanghwamun-001",
+    "type": "tourist_info",
+    "name": {"ko": "광화문 관광안내소", "en": "Gwanghwamun Tourist Information Center"},
+    "location": {"lat": 37.5716, "lng": 126.9768, "address_ko": "서울특별시 종로구 세종대로 175", "address_en": "175, Sejong-daero, Jongno-gu, Seoul", "district": "jongno", "nearest_station": "광화문역 (Gwanghwamun)"},
+    "services": {"languages": ["ko", "en", "ja", "zh"], "has_map": true, "has_wifi": true, "luggage_storage": false, "currency_exchange": true},
+    "hours": {"open": "09:00", "close": "21:00", "is_24h": false, "closed_days": []},
+    "accessibility": {"wheelchair": true, "elevator_nearby": false},
+    "trust_score": 0.98, "data_source": "data.go.kr", "last_verified": "2026-02-22"
+  }
+]

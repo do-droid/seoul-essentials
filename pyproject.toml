@@ -1,0 +1,16 @@
+[project]
+name = "seoul-essentials"
+version = "0.1.0"
+description = "Essential public facility data for Seoul — MCP Server for AI agents helping foreign tourists"
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=3.0.0",
+    "pydantic>=2.0.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

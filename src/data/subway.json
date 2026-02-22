@@ -1,0 +1,582 @@
+[
+  {
+    "station_id": "kr-subway-line2-gangnam",
+    "station_name": {"ko": "강남", "en": "Gangnam"},
+    "line": "2",
+    "line_name": {"ko": "2호선", "en": "Line 2"},
+    "timetable": {
+      "weekday": {
+        "up": [
+          {"time": "05:30", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:38", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:46", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:54", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:02", "destination": "시청 (City Hall)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:28", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:36", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:44", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:52", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:00", "destination": "신도림 (Sindorim)", "type": "normal"}
+        ]
+      },
+      "saturday": {
+        "up": [
+          {"time": "05:30", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:42", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:54", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:06", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:18", "destination": "시청 (City Hall)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:28", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:40", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:52", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:04", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:16", "destination": "신도림 (Sindorim)", "type": "normal"}
+        ]
+      },
+      "holiday": {
+        "up": [
+          {"time": "05:30", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:45", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:00", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:15", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:30", "destination": "시청 (City Hall)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:28", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:43", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:58", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:13", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:28", "destination": "신도림 (Sindorim)", "type": "normal"}
+        ]
+      }
+    },
+    "transfer_lines": ["신분당선 (Sinbundang Line)"],
+    "data_source": "data.seoul.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "station_id": "kr-subway-line1-seoul-station",
+    "station_name": {"ko": "서울역", "en": "Seoul Station"},
+    "line": "1",
+    "line_name": {"ko": "1호선", "en": "Line 1"},
+    "timetable": {
+      "weekday": {
+        "up": [
+          {"time": "05:20", "destination": "소요산 (Soyosan)", "type": "normal"},
+          {"time": "05:30", "destination": "의정부 (Uijeongbu)", "type": "normal"},
+          {"time": "05:40", "destination": "소요산 (Soyosan)", "type": "normal"},
+          {"time": "05:50", "destination": "양주 (Yangju)", "type": "normal"},
+          {"time": "06:00", "destination": "소요산 (Soyosan)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:25", "destination": "인천 (Incheon)", "type": "normal"},
+          {"time": "05:35", "destination": "천안 (Cheonan)", "type": "normal"},
+          {"time": "05:45", "destination": "인천 (Incheon)", "type": "normal"},
+          {"time": "05:55", "destination": "서동탄 (Seo-Dongtan)", "type": "normal"},
+          {"time": "06:05", "destination": "인천 (Incheon)", "type": "normal"}
+        ]
+      },
+      "saturday": {
+        "up": [
+          {"time": "05:25", "destination": "소요산 (Soyosan)", "type": "normal"},
+          {"time": "05:40", "destination": "의정부 (Uijeongbu)", "type": "normal"},
+          {"time": "05:55", "destination": "소요산 (Soyosan)", "type": "normal"},
+          {"time": "06:10", "destination": "양주 (Yangju)", "type": "normal"},
+          {"time": "06:25", "destination": "소요산 (Soyosan)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:30", "destination": "인천 (Incheon)", "type": "normal"},
+          {"time": "05:45", "destination": "천안 (Cheonan)", "type": "normal"},
+          {"time": "06:00", "destination": "인천 (Incheon)", "type": "normal"},
+          {"time": "06:15", "destination": "서동탄 (Seo-Dongtan)", "type": "normal"},
+          {"time": "06:30", "destination": "인천 (Incheon)", "type": "normal"}
+        ]
+      },
+      "holiday": {
+        "up": [
+          {"time": "05:30", "destination": "소요산 (Soyosan)", "type": "normal"},
+          {"time": "05:48", "destination": "의정부 (Uijeongbu)", "type": "normal"},
+          {"time": "06:06", "destination": "소요산 (Soyosan)", "type": "normal"},
+          {"time": "06:24", "destination": "양주 (Yangju)", "type": "normal"},
+          {"time": "06:42", "destination": "소요산 (Soyosan)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:35", "destination": "인천 (Incheon)", "type": "normal"},
+          {"time": "05:53", "destination": "천안 (Cheonan)", "type": "normal"},
+          {"time": "06:11", "destination": "인천 (Incheon)", "type": "normal"},
+          {"time": "06:29", "destination": "서동탄 (Seo-Dongtan)", "type": "normal"},
+          {"time": "06:47", "destination": "인천 (Incheon)", "type": "normal"}
+        ]
+      }
+    },
+    "transfer_lines": ["4호선 (Line 4)", "경의중앙선 (Gyeongui-Jungang)", "공항철도 (AREX)"],
+    "data_source": "data.seoul.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "station_id": "kr-subway-line4-myeongdong",
+    "station_name": {"ko": "명동", "en": "Myeongdong"},
+    "line": "4",
+    "line_name": {"ko": "4호선", "en": "Line 4"},
+    "timetable": {
+      "weekday": {
+        "up": [
+          {"time": "05:35", "destination": "당고개 (Danggogae)", "type": "normal"},
+          {"time": "05:45", "destination": "당고개 (Danggogae)", "type": "normal"},
+          {"time": "05:55", "destination": "당고개 (Danggogae)", "type": "normal"},
+          {"time": "06:03", "destination": "당고개 (Danggogae)", "type": "normal"},
+          {"time": "06:11", "destination": "당고개 (Danggogae)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:33", "destination": "오이도 (Oido)", "type": "normal"},
+          {"time": "05:43", "destination": "안산 (Ansan)", "type": "normal"},
+          {"time": "05:53", "destination": "오이도 (Oido)", "type": "normal"},
+          {"time": "06:01", "destination": "안산 (Ansan)", "type": "normal"},
+          {"time": "06:09", "destination": "오이도 (Oido)", "type": "normal"}
+        ]
+      },
+      "saturday": {
+        "up": [
+          {"time": "05:40", "destination": "당고개 (Danggogae)", "type": "normal"},
+          {"time": "05:55", "destination": "당고개 (Danggogae)", "type": "normal"},
+          {"time": "06:10", "destination": "당고개 (Danggogae)", "type": "normal"},
+          {"time": "06:25", "destination": "당고개 (Danggogae)", "type": "normal"},
+          {"time": "06:40", "destination": "당고개 (Danggogae)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:38", "destination": "오이도 (Oido)", "type": "normal"},
+          {"time": "05:53", "destination": "안산 (Ansan)", "type": "normal"},
+          {"time": "06:08", "destination": "오이도 (Oido)", "type": "normal"},
+          {"time": "06:23", "destination": "안산 (Ansan)", "type": "normal"},
+          {"time": "06:38", "destination": "오이도 (Oido)", "type": "normal"}
+        ]
+      },
+      "holiday": {
+        "up": [
+          {"time": "05:40", "destination": "당고개 (Danggogae)", "type": "normal"},
+          {"time": "05:58", "destination": "당고개 (Danggogae)", "type": "normal"},
+          {"time": "06:16", "destination": "당고개 (Danggogae)", "type": "normal"},
+          {"time": "06:34", "destination": "당고개 (Danggogae)", "type": "normal"},
+          {"time": "06:52", "destination": "당고개 (Danggogae)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:38", "destination": "오이도 (Oido)", "type": "normal"},
+          {"time": "05:56", "destination": "안산 (Ansan)", "type": "normal"},
+          {"time": "06:14", "destination": "오이도 (Oido)", "type": "normal"},
+          {"time": "06:32", "destination": "안산 (Ansan)", "type": "normal"},
+          {"time": "06:50", "destination": "오이도 (Oido)", "type": "normal"}
+        ]
+      }
+    },
+    "transfer_lines": [],
+    "data_source": "data.seoul.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "station_id": "kr-subway-line2-hongik",
+    "station_name": {"ko": "홍대입구", "en": "Hongik Univ."},
+    "line": "2",
+    "line_name": {"ko": "2호선", "en": "Line 2"},
+    "timetable": {
+      "weekday": {
+        "up": [
+          {"time": "05:28", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:36", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:44", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:52", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:00", "destination": "시청 (City Hall)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:32", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:40", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:48", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:56", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:04", "destination": "신도림 (Sindorim)", "type": "normal"}
+        ]
+      },
+      "saturday": {
+        "up": [
+          {"time": "05:32", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:44", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:56", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:08", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:20", "destination": "시청 (City Hall)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:36", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:48", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:00", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:12", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:24", "destination": "신도림 (Sindorim)", "type": "normal"}
+        ]
+      },
+      "holiday": {
+        "up": [
+          {"time": "05:35", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:50", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:05", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:20", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:35", "destination": "시청 (City Hall)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:33", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:48", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:03", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:18", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:33", "destination": "신도림 (Sindorim)", "type": "normal"}
+        ]
+      }
+    },
+    "transfer_lines": ["공항철도 (AREX)", "경의중앙선 (Gyeongui-Jungang)"],
+    "data_source": "data.seoul.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "station_id": "kr-subway-line6-itaewon",
+    "station_name": {"ko": "이태원", "en": "Itaewon"},
+    "line": "6",
+    "line_name": {"ko": "6호선", "en": "Line 6"},
+    "timetable": {
+      "weekday": {
+        "up": [
+          {"time": "05:35", "destination": "응암순환 (Eungam Loop)", "type": "normal"},
+          {"time": "05:47", "destination": "응암순환 (Eungam Loop)", "type": "normal"},
+          {"time": "05:59", "destination": "응암순환 (Eungam Loop)", "type": "normal"},
+          {"time": "06:08", "destination": "응암순환 (Eungam Loop)", "type": "normal"},
+          {"time": "06:17", "destination": "응암순환 (Eungam Loop)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:38", "destination": "신내 (Sinnae)", "type": "normal"},
+          {"time": "05:50", "destination": "신내 (Sinnae)", "type": "normal"},
+          {"time": "06:02", "destination": "신내 (Sinnae)", "type": "normal"},
+          {"time": "06:11", "destination": "신내 (Sinnae)", "type": "normal"},
+          {"time": "06:20", "destination": "신내 (Sinnae)", "type": "normal"}
+        ]
+      },
+      "saturday": {
+        "up": [
+          {"time": "05:40", "destination": "응암순환 (Eungam Loop)", "type": "normal"},
+          {"time": "05:55", "destination": "응암순환 (Eungam Loop)", "type": "normal"},
+          {"time": "06:10", "destination": "응암순환 (Eungam Loop)", "type": "normal"},
+          {"time": "06:25", "destination": "응암순환 (Eungam Loop)", "type": "normal"},
+          {"time": "06:40", "destination": "응암순환 (Eungam Loop)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:43", "destination": "신내 (Sinnae)", "type": "normal"},
+          {"time": "05:58", "destination": "신내 (Sinnae)", "type": "normal"},
+          {"time": "06:13", "destination": "신내 (Sinnae)", "type": "normal"},
+          {"time": "06:28", "destination": "신내 (Sinnae)", "type": "normal"},
+          {"time": "06:43", "destination": "신내 (Sinnae)", "type": "normal"}
+        ]
+      },
+      "holiday": {
+        "up": [
+          {"time": "05:40", "destination": "응암순환 (Eungam Loop)", "type": "normal"},
+          {"time": "05:58", "destination": "응암순환 (Eungam Loop)", "type": "normal"},
+          {"time": "06:16", "destination": "응암순환 (Eungam Loop)", "type": "normal"},
+          {"time": "06:34", "destination": "응암순환 (Eungam Loop)", "type": "normal"},
+          {"time": "06:52", "destination": "응암순환 (Eungam Loop)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:43", "destination": "신내 (Sinnae)", "type": "normal"},
+          {"time": "06:01", "destination": "신내 (Sinnae)", "type": "normal"},
+          {"time": "06:19", "destination": "신내 (Sinnae)", "type": "normal"},
+          {"time": "06:37", "destination": "신내 (Sinnae)", "type": "normal"},
+          {"time": "06:55", "destination": "신내 (Sinnae)", "type": "normal"}
+        ]
+      }
+    },
+    "transfer_lines": [],
+    "data_source": "data.seoul.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "station_id": "kr-subway-line2-jamsil",
+    "station_name": {"ko": "잠실", "en": "Jamsil"},
+    "line": "2",
+    "line_name": {"ko": "2호선", "en": "Line 2"},
+    "timetable": {
+      "weekday": {
+        "up": [
+          {"time": "05:25", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:33", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:41", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:49", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:57", "destination": "시청 (City Hall)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:27", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "05:35", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "05:43", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "05:51", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "05:59", "destination": "성수 (Seongsu)", "type": "normal"}
+        ]
+      },
+      "saturday": {
+        "up": [
+          {"time": "05:30", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:42", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:54", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:06", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:18", "destination": "시청 (City Hall)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:32", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "05:44", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "05:56", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "06:08", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "06:20", "destination": "성수 (Seongsu)", "type": "normal"}
+        ]
+      },
+      "holiday": {
+        "up": [
+          {"time": "05:30", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:45", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:00", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:15", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:30", "destination": "시청 (City Hall)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:32", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "05:47", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "06:02", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "06:17", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "06:32", "destination": "성수 (Seongsu)", "type": "normal"}
+        ]
+      }
+    },
+    "transfer_lines": ["8호선 (Line 8)"],
+    "data_source": "data.seoul.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "station_id": "kr-subway-line1-jongno3ga",
+    "station_name": {"ko": "종로3가", "en": "Jongno 3-ga"},
+    "line": "1",
+    "line_name": {"ko": "1호선", "en": "Line 1"},
+    "timetable": {
+      "weekday": {
+        "up": [
+          {"time": "05:25", "destination": "소요산 (Soyosan)", "type": "normal"},
+          {"time": "05:35", "destination": "의정부 (Uijeongbu)", "type": "normal"},
+          {"time": "05:45", "destination": "소요산 (Soyosan)", "type": "normal"},
+          {"time": "05:55", "destination": "양주 (Yangju)", "type": "normal"},
+          {"time": "06:05", "destination": "소요산 (Soyosan)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:22", "destination": "인천 (Incheon)", "type": "normal"},
+          {"time": "05:32", "destination": "천안 (Cheonan)", "type": "normal"},
+          {"time": "05:42", "destination": "인천 (Incheon)", "type": "normal"},
+          {"time": "05:52", "destination": "서동탄 (Seo-Dongtan)", "type": "normal"},
+          {"time": "06:02", "destination": "인천 (Incheon)", "type": "normal"}
+        ]
+      },
+      "saturday": {
+        "up": [
+          {"time": "05:30", "destination": "소요산 (Soyosan)", "type": "normal"},
+          {"time": "05:45", "destination": "의정부 (Uijeongbu)", "type": "normal"},
+          {"time": "06:00", "destination": "소요산 (Soyosan)", "type": "normal"},
+          {"time": "06:15", "destination": "양주 (Yangju)", "type": "normal"},
+          {"time": "06:30", "destination": "소요산 (Soyosan)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:28", "destination": "인천 (Incheon)", "type": "normal"},
+          {"time": "05:43", "destination": "천안 (Cheonan)", "type": "normal"},
+          {"time": "05:58", "destination": "인천 (Incheon)", "type": "normal"},
+          {"time": "06:13", "destination": "서동탄 (Seo-Dongtan)", "type": "normal"},
+          {"time": "06:28", "destination": "인천 (Incheon)", "type": "normal"}
+        ]
+      },
+      "holiday": {
+        "up": [
+          {"time": "05:35", "destination": "소요산 (Soyosan)", "type": "normal"},
+          {"time": "05:53", "destination": "의정부 (Uijeongbu)", "type": "normal"},
+          {"time": "06:11", "destination": "소요산 (Soyosan)", "type": "normal"},
+          {"time": "06:29", "destination": "양주 (Yangju)", "type": "normal"},
+          {"time": "06:47", "destination": "소요산 (Soyosan)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:33", "destination": "인천 (Incheon)", "type": "normal"},
+          {"time": "05:51", "destination": "천안 (Cheonan)", "type": "normal"},
+          {"time": "06:09", "destination": "인천 (Incheon)", "type": "normal"},
+          {"time": "06:27", "destination": "서동탄 (Seo-Dongtan)", "type": "normal"},
+          {"time": "06:45", "destination": "인천 (Incheon)", "type": "normal"}
+        ]
+      }
+    },
+    "transfer_lines": ["3호선 (Line 3)", "5호선 (Line 5)"],
+    "data_source": "data.seoul.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "station_id": "kr-subway-line2-sinchon",
+    "station_name": {"ko": "신촌", "en": "Sinchon"},
+    "line": "2",
+    "line_name": {"ko": "2호선", "en": "Line 2"},
+    "timetable": {
+      "weekday": {
+        "up": [
+          {"time": "05:30", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:38", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:46", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:54", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:02", "destination": "시청 (City Hall)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:33", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:41", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:49", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:57", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:05", "destination": "신도림 (Sindorim)", "type": "normal"}
+        ]
+      },
+      "saturday": {
+        "up": [
+          {"time": "05:35", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:47", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:59", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:11", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:23", "destination": "시청 (City Hall)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:38", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:50", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:02", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:14", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:26", "destination": "신도림 (Sindorim)", "type": "normal"}
+        ]
+      },
+      "holiday": {
+        "up": [
+          {"time": "05:38", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:53", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:08", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:23", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:38", "destination": "시청 (City Hall)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:36", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "05:51", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:06", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:21", "destination": "신도림 (Sindorim)", "type": "normal"},
+          {"time": "06:36", "destination": "신도림 (Sindorim)", "type": "normal"}
+        ]
+      }
+    },
+    "transfer_lines": [],
+    "data_source": "data.seoul.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "station_id": "kr-subway-line3-express-bus",
+    "station_name": {"ko": "고속터미널", "en": "Express Bus Terminal"},
+    "line": "3",
+    "line_name": {"ko": "3호선", "en": "Line 3"},
+    "timetable": {
+      "weekday": {
+        "up": [
+          {"time": "05:30", "destination": "대화 (Daehwa)", "type": "normal"},
+          {"time": "05:40", "destination": "구파발 (Gupabal)", "type": "normal"},
+          {"time": "05:50", "destination": "대화 (Daehwa)", "type": "normal"},
+          {"time": "06:00", "destination": "구파발 (Gupabal)", "type": "normal"},
+          {"time": "06:08", "destination": "대화 (Daehwa)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:28", "destination": "오금 (Ogeum)", "type": "normal"},
+          {"time": "05:38", "destination": "오금 (Ogeum)", "type": "normal"},
+          {"time": "05:48", "destination": "오금 (Ogeum)", "type": "normal"},
+          {"time": "05:58", "destination": "오금 (Ogeum)", "type": "normal"},
+          {"time": "06:06", "destination": "오금 (Ogeum)", "type": "normal"}
+        ]
+      },
+      "saturday": {
+        "up": [
+          {"time": "05:35", "destination": "대화 (Daehwa)", "type": "normal"},
+          {"time": "05:50", "destination": "구파발 (Gupabal)", "type": "normal"},
+          {"time": "06:05", "destination": "대화 (Daehwa)", "type": "normal"},
+          {"time": "06:20", "destination": "구파발 (Gupabal)", "type": "normal"},
+          {"time": "06:35", "destination": "대화 (Daehwa)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:33", "destination": "오금 (Ogeum)", "type": "normal"},
+          {"time": "05:48", "destination": "오금 (Ogeum)", "type": "normal"},
+          {"time": "06:03", "destination": "오금 (Ogeum)", "type": "normal"},
+          {"time": "06:18", "destination": "오금 (Ogeum)", "type": "normal"},
+          {"time": "06:33", "destination": "오금 (Ogeum)", "type": "normal"}
+        ]
+      },
+      "holiday": {
+        "up": [
+          {"time": "05:38", "destination": "대화 (Daehwa)", "type": "normal"},
+          {"time": "05:56", "destination": "구파발 (Gupabal)", "type": "normal"},
+          {"time": "06:14", "destination": "대화 (Daehwa)", "type": "normal"},
+          {"time": "06:32", "destination": "구파발 (Gupabal)", "type": "normal"},
+          {"time": "06:50", "destination": "대화 (Daehwa)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:36", "destination": "오금 (Ogeum)", "type": "normal"},
+          {"time": "05:54", "destination": "오금 (Ogeum)", "type": "normal"},
+          {"time": "06:12", "destination": "오금 (Ogeum)", "type": "normal"},
+          {"time": "06:30", "destination": "오금 (Ogeum)", "type": "normal"},
+          {"time": "06:48", "destination": "오금 (Ogeum)", "type": "normal"}
+        ]
+      }
+    },
+    "transfer_lines": ["7호선 (Line 7)", "9호선 (Line 9)"],
+    "data_source": "data.seoul.go.kr", "last_verified": "2026-02-22"
+  },
+  {
+    "station_id": "kr-subway-line2-dongdaemun",
+    "station_name": {"ko": "동대문역사문화공원", "en": "Dongdaemun History & Culture Park"},
+    "line": "2",
+    "line_name": {"ko": "2호선", "en": "Line 2"},
+    "timetable": {
+      "weekday": {
+        "up": [
+          {"time": "05:27", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:35", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:43", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:51", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:59", "destination": "시청 (City Hall)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:30", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "05:38", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "05:46", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "05:54", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "06:02", "destination": "성수 (Seongsu)", "type": "normal"}
+        ]
+      },
+      "saturday": {
+        "up": [
+          {"time": "05:32", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:44", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:56", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:08", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:20", "destination": "시청 (City Hall)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:35", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "05:47", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "05:59", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "06:11", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "06:23", "destination": "성수 (Seongsu)", "type": "normal"}
+        ]
+      },
+      "holiday": {
+        "up": [
+          {"time": "05:35", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "05:50", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:05", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:20", "destination": "시청 (City Hall)", "type": "normal"},
+          {"time": "06:35", "destination": "시청 (City Hall)", "type": "normal"}
+        ],
+        "down": [
+          {"time": "05:38", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "05:53", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "06:08", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "06:23", "destination": "성수 (Seongsu)", "type": "normal"},
+          {"time": "06:38", "destination": "성수 (Seongsu)", "type": "normal"}
+        ]
+      }
+    },
+    "transfer_lines": ["4호선 (Line 4)", "5호선 (Line 5)"],
+    "data_source": "data.seoul.go.kr", "last_verified": "2026-02-22"
+  }
+]
