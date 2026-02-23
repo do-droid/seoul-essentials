@@ -1,0 +1,39 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.do-droid/seoul-essentials",
+  "description": "22,000+ public facility data for foreign tourists in Seoul — restrooms, pharmacies, WiFi hotspots, AED locations, tourist info centers, and subway timetables.",
+  "repository": {
+    "url": "https://github.com/do-droid/seoul-essentials",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "docker",
+      "identifier": "ghcr.io/do-droid/seoul-essentials",
+      "version": "0.1.0",
+      "transport": {
+        "type": "http",
+        "path": "/mcp"
+      }
+    }
+  ],
+  "tools": [
+    {
+      "name": "find_places",
+      "description": "Search for public facilities in Seoul by type and conditions"
+    },
+    {
+      "name": "get_place_detail",
+      "description": "Get full details of a specific place by its ID"
+    },
+    {
+      "name": "find_nearby",
+      "description": "Find facilities near GPS coordinates, sorted by distance"
+    },
+    {
+      "name": "get_subway_timetable",
+      "description": "Get Seoul subway timetable for a specific station"
+    }
+  ]
+}

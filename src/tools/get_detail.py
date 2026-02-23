@@ -7,7 +7,7 @@ def get_place_detail(id: str) -> dict | str:
     """Get full details of a specific place or subway station in Seoul by its ID.
 
     Args:
-        id: The unique place ID (e.g., "kr-pharmacy-gangnam-001" or "kr-subway-line2-gangnam").
+        id: The unique place ID (e.g., "toilet_00001", "pharmacy_001", "wifi_00001", "aed_00001", "tourist_info_01").
 
     Returns:
         Complete place information including location, services, hours, and accessibility, or an error message if not found.

@@ -4,20 +4,18 @@ Essential public facility data for AI agents helping foreign tourists in Seoul, 
 
 ## What is this?
 
-Seoul Essentials is an MCP (Model Context Protocol) server that provides structured, bilingual (Korean/English) data about essential public facilities in Seoul. Designed for AI agents that assist foreign tourists with real-time queries about nearby services.
+Seoul Essentials is an MCP (Model Context Protocol) server that provides structured data about essential public facilities in Seoul. Designed for AI agents that assist foreign tourists with real-time queries about nearby services.
 
-## Available Data
+## Available Data (22,000+ places)
 
-| Type | Description | Sample Count |
-|------|-------------|-------------|
-| `toilet` | Public restrooms (subway stations, parks, landmarks) | 15 |
-| `pharmacy` | Pharmacies with language support & 24hr availability | 15 |
-| `wifi` | Free public WiFi hotspots | 15 |
-| `aed` | AED (Automated External Defibrillator) locations | 15 |
-| `tourist_info` | Tourist information centers | 10 |
+| Type | Description | Count |
+|------|-------------|-------|
+| `toilet` | Public restrooms across all 25 districts | 4,452 |
+| `pharmacy` | Pharmacies with foreign language support | 417 |
+| `wifi` | Free public WiFi hotspots (Seoul WiFi) | 7,251 |
+| `aed` | AED (defibrillator) locations | 10,000 |
+| `tourist_info` | Tourist information centers | 16 |
 | `subway` | Subway timetables for major stations | 10 stations |
-
-> Coverage is expanding — full Seoul dataset (15,000+ places) coming soon.
 
 ## MCP Tools
 
@@ -26,25 +24,25 @@ Search for public facilities by type and conditions.
 
 **Parameters:**
 - `type` (required): `"toilet"` | `"pharmacy"` | `"wifi"` | `"aed"` | `"tourist_info"`
-- `district` (optional): Seoul district name (e.g., `"gangnam"`, `"jongno"`, `"mapo"`)
-- `filters` (optional): Service-specific filters (e.g., `{"english_spoken": true}`)
-- `limit` (optional): Max results (default: 10)
+- `district` (optional): Seoul district name in English or Korean (e.g., `"gangnam"`, `"강남구"`)
+- `filters` (optional): Service-specific filters (e.g., `{"english": true}`, `{"is_24h": true}`, `{"indoor": true}`)
+- `limit` (optional): Max results, 1-50 (default: 10)
 
 ### `get_place_detail`
 Get full details of a specific place by its ID.
 
 **Parameters:**
-- `id` (required): Place ID (e.g., `"kr-pharmacy-gangnam-001"`)
+- `id` (required): Place ID (e.g., `"toilet_00001"`, `"pharmacy_001"`, `"aed_00001"`)
 
 ### `find_nearby`
 Find public facilities near GPS coordinates, sorted by distance.
 
 **Parameters:**
-- `lat` (required): Latitude
-- `lng` (required): Longitude
-- `radius_m` (optional): Search radius in meters (default: 500)
+- `lat` (required): Latitude (Seoul range: ~37.4 to ~37.7)
+- `lng` (required): Longitude (Seoul range: ~126.7 to ~127.2)
+- `radius_m` (optional): Search radius in meters, 100-5000 (default: 500)
 - `type` (optional): Filter by facility type
-- `limit` (optional): Max results (default: 5)
+- `limit` (optional): Max results, 1-20 (default: 5)
 
 ### `get_subway_timetable`
 Get subway timetable for a specific station.
@@ -67,8 +65,10 @@ An AI agent can use these tools to answer questions like:
 
 ## Data Sources
 
-- [Korea Open Data Portal (data.go.kr)](https://www.data.go.kr)
+All data sourced from official Seoul government open data:
+
 - [Seoul Open Data Plaza (data.seoul.go.kr)](https://data.seoul.go.kr)
+- [Korea Open Data Portal (data.go.kr)](https://www.data.go.kr)
 
 ## License
 
