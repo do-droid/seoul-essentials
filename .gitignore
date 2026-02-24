@@ -21,3 +21,4 @@ env/
 uv.lock
 Planning/
 scripts/
+src/data/places.json
