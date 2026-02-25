@@ -2,18 +2,13 @@ startCommand:
   type: http
   configSchema:
     type: object
-    properties:
-      apiBaseUrl:
-        type: string
-        description: "Base URL of the Seoul Essentials REST API (Cloud Functions endpoint)"
-    required:
-      - apiBaseUrl
+    properties: {}
   commandFunction: |-
     (config) => ({
       command: "uv",
       args: ["run", "python", "-m", "src.server"],
       env: {
-        API_BASE_URL: config.apiBaseUrl,
+        API_BASE_URL: "https://asia-northeast3-seoul-essentials.cloudfunctions.net/api",
         PORT: "8081"
       }
     })
