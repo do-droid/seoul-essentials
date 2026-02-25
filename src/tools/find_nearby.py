@@ -1,7 +1,6 @@
 from __future__ import annotations
 
-from src.data.geo import haversine_distance
-from src.data.loader import get_places
+from src.data.api_client import find_nearby as _api_nearby
 from src.models.place import PlaceType
 
 
@@ -24,20 +23,4 @@ def find_nearby(
     Returns:
         A list of nearby places sorted by distance, with distance_m field indicating meters from the search point.
     """
-    places = get_places()
-    if type:
-        places = [p for p in places if p.type == type]
-
-    clamped_radius = max(100, min(radius_m, 5000))
-    clamped_limit = max(1, min(limit, 20))
-
-    with_distance = []
-    for p in places:
-        dist = haversine_distance(lat, lng, p.location.lat, p.location.lng)
-        if dist <= clamped_radius:
-            entry = p.model_dump()
-            entry["distance_m"] = round(dist, 1)
-            with_distance.append(entry)
-
-    with_distance.sort(key=lambda x: x["distance_m"])
-    return with_distance[:clamped_limit]
+    return _api_nearby(lat=lat, lng=lng, radius_m=radius_m, type=type, limit=limit)

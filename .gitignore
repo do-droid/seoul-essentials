@@ -22,3 +22,6 @@ uv.lock
 Planning/
 scripts/
 src/data/places.json
+functions/__pycache__/
+functions/venv/
+.firebase/

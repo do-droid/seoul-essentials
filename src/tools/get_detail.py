@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from src.data.loader import get_places, get_subway_stations
+from src.data.api_client import get_detail as _api_detail
 
 
 def get_place_detail(id: str) -> dict | str:
@@ -12,12 +12,7 @@ def get_place_detail(id: str) -> dict | str:
     Returns:
         Complete place information including location, services, hours, and accessibility, or an error message if not found.
     """
-    for p in get_places():
-        if p.id == id:
-            return p.model_dump()
-
-    for s in get_subway_stations():
-        if s.station_id == id:
-            return s.model_dump()
-
-    return f"Place not found: {id}. Use find_places or get_subway_timetable to discover available IDs."
+    result = _api_detail(id)
+    if "error" in result:
+        return f"Place not found: {id}. Use find_places or get_subway_timetable to discover available IDs."
+    return result

@@ -1,12 +1,12 @@
 [project]
 name = "seoul-essentials"
-version = "0.1.0"
+version = "0.2.0"
 description = "Essential public facility data for Seoul — MCP Server for AI agents helping foreign tourists"
 requires-python = ">=3.12"
 dependencies = [
     "fastmcp>=3.0.0",
     "pydantic>=2.0.0",
-    "firebase-admin>=6.0.0",
+    "httpx>=0.27.0",
 ]
 
 [tool.hatch.build.targets.wheel]

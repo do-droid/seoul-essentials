@@ -3,7 +3,7 @@ import os
 
 from fastmcp import FastMCP
 
-from src.data.loader import get_places, get_subway_stations, load_data
+from src.data.api_client import health_check, init_client
 
 logging.basicConfig(level=logging.INFO)
 from src.tools.find_nearby import find_nearby
@@ -32,9 +32,10 @@ mcp.tool(get_subway_timetable)
 
 
 def main():
-    load_data()
     logger = logging.getLogger(__name__)
-    logger.info(f"Data ready: {len(get_places())} places, {len(get_subway_stations())} subway stations")
+    init_client()
+    status = health_check()
+    logger.info(f"API backend: {status}")
     port = int(os.environ.get("PORT", "8081"))
     mcp.run(transport="http", host="0.0.0.0", port=port, stateless_http=True)
 

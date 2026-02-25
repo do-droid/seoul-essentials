@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Literal
 
-from src.data.loader import get_subway_stations
+from src.data.api_client import get_subway_timetable as _api_subway
 
 
 def get_subway_timetable(
@@ -22,49 +22,11 @@ def get_subway_timetable(
     Returns:
         Timetable data with departure times, destinations, and transfer line info, or an error message if station not found.
     """
-    stations = get_subway_stations()
-    station_query = station.strip()
-    station_lower = station_query.lower()
-
-    matches = []
-    for s in stations:
-        name_match = (
-            s.station_name.ko == station_query
-            or s.station_name.en.lower() == station_lower
-        )
-        if name_match and (line is None or s.line == line):
-            matches.append(s)
-
-    if not matches:
-        available = sorted(set(
-            f"{s.station_name.ko} ({s.station_name.en})" for s in stations
-        ))
-        return (
-            f"Station not found: '{station}'. "
-            f"Available stations: {', '.join(available)}"
-        )
-
-    results = []
-    for s in matches:
-        timetable_data = getattr(s.timetable, day_type)
-        entry = {
-            "station_id": s.station_id,
-            "station_name": s.station_name.model_dump(),
-            "line": s.line,
-            "line_name": s.line_name.model_dump(),
-            "day_type": day_type,
-            "transfer_lines": s.transfer_lines,
-        }
-
-        if direction == "up":
-            entry["timetable"] = {"up": [t.model_dump() for t in timetable_data.up]}
-        elif direction == "down":
-            entry["timetable"] = {"down": [t.model_dump() for t in timetable_data.down]}
-        else:
-            entry["timetable"] = {
-                "up": [t.model_dump() for t in timetable_data.up],
-                "down": [t.model_dump() for t in timetable_data.down],
-            }
-        results.append(entry)
-
-    return results
+    result = _api_subway(station=station, line=line, day_type=day_type, direction=direction)
+    if isinstance(result, dict) and "error" in result:
+        available = result.get("available_stations", [])
+        msg = f"Station not found: '{station}'."
+        if available:
+            msg += f" Available stations: {', '.join(available)}"
+        return msg
+    return result

@@ -3,17 +3,17 @@ startCommand:
   configSchema:
     type: object
     properties:
-      firebaseCredentialsBase64:
+      apiBaseUrl:
         type: string
-        description: "Base64-encoded Firebase service account JSON key"
+        description: "Base URL of the Seoul Essentials REST API (Cloud Functions endpoint)"
     required:
-      - firebaseCredentialsBase64
+      - apiBaseUrl
   commandFunction: |-
     (config) => ({
       command: "uv",
       args: ["run", "python", "-m", "src.server"],
       env: {
-        FIREBASE_CREDENTIALS_BASE64: config.firebaseCredentialsBase64,
+        API_BASE_URL: config.apiBaseUrl,
         PORT: "8081"
       }
     })
