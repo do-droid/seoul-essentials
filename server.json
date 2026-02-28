@@ -1,20 +1,19 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.do-droid/seoul-essentials",
-  "description": "22,000+ public facility data for foreign tourists in Seoul — restrooms, pharmacies, WiFi hotspots, AED locations, tourist info centers, and subway timetables.",
+  "description": "22,000+ Seoul public facility data for tourists: restrooms, pharmacies, WiFi, AEDs, and subway.",
   "repository": {
     "url": "https://github.com/do-droid/seoul-essentials",
     "source": "github"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "packages": [
     {
-      "registryType": "docker",
-      "identifier": "ghcr.io/do-droid/seoul-essentials",
-      "version": "0.1.0",
+      "registryType": "oci",
+      "identifier": "ghcr.io/do-droid/seoul-essentials:0.2.0",
       "transport": {
-        "type": "http",
-        "path": "/mcp"
+        "type": "streamable-http",
+        "url": "https://seoul-essentials-mcp-230987091625.asia-northeast3.run.app/mcp"
       }
     }
   ],

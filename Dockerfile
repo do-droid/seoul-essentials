@@ -9,6 +9,8 @@ RUN uv sync --no-dev --no-editable
 
 COPY src/ src/
 
+LABEL io.modelcontextprotocol.server.name="io.github.do-droid/seoul-essentials"
+
 ENV PORT=8081
 EXPOSE ${PORT}
 
