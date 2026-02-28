@@ -53,6 +53,35 @@ Get subway timetable for a specific station.
 - `day_type` (optional): `"weekday"` | `"saturday"` | `"holiday"` (default: `"weekday"`)
 - `direction` (optional): `"up"` | `"down"`
 
+## Quick Start
+
+### Option A: Smithery (Recommended)
+
+Visit [Seoul Essentials on Smithery](https://smithery.ai/servers/do-droid/seoul-essentials) and follow the setup instructions for your MCP client.
+
+### Option B: Direct Connection
+
+Add to your MCP client config (e.g., Claude Desktop `claude_desktop_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "seoul-essentials": {
+      "url": "https://seoul-essentials-mcp-230987091625.asia-northeast3.run.app/mcp"
+    }
+  }
+}
+```
+
+### Option C: Run Locally
+
+```bash
+git clone https://github.com/do-droid/seoul-essentials.git
+cd seoul-essentials
+API_BASE_URL="https://asia-northeast3-seoul-essentials.cloudfunctions.net/api" \
+uv run python -m src.server
+```
+
 ## Example Queries
 
 An AI agent can use these tools to answer questions like:
