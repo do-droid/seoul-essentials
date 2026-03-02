@@ -33,6 +33,10 @@
     {
       "name": "get_subway_timetable",
       "description": "Get Seoul subway timetable for a specific station"
+    },
+    {
+      "name": "submit_feedback",
+      "description": "Submit feedback about data quality, coverage, or feature requests"
     }
   ]
 }

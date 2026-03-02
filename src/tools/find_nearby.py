@@ -2,15 +2,17 @@ from __future__ import annotations
 
 from src.data.api_client import find_nearby as _api_nearby
 from src.models.place import PlaceType
+from src.tools.analytics import track_usage
 
 
+@track_usage
 def find_nearby(
     lat: float,
     lng: float,
     radius_m: int = 500,
     type: PlaceType | None = None,
     limit: int = 5,
-) -> list[dict]:
+) -> list[dict] | dict:
     """Find public facilities near GPS coordinates in Seoul, sorted by distance.
 
     Args:
@@ -23,4 +25,11 @@ def find_nearby(
     Returns:
         A list of nearby places sorted by distance, with distance_m field indicating meters from the search point.
     """
-    return _api_nearby(lat=lat, lng=lng, radius_m=radius_m, type=type, limit=limit)
+    results = _api_nearby(lat=lat, lng=lng, radius_m=radius_m, type=type, limit=limit)
+    if isinstance(results, list) and len(results) == 0:
+        return {
+            "count": 0,
+            "results": [],
+            "hint": "No results found nearby. Try increasing radius_m or changing the type. If you think this data should exist, consider submitting feedback via the submit_feedback tool.",
+        }
+    return results

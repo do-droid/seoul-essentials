@@ -96,6 +96,16 @@ An AI agent can use these tools to answer questions like:
 - "Find free WiFi hotspots in Hongdae area"
 - "Where is the closest AED to Itaewon?"
 
+## Feedback
+
+We actively review and incorporate feedback to improve data quality and coverage.
+
+**For AI agents:** Use the `submit_feedback` tool during a conversation to report issues or suggest improvements.
+
+**For developers:** [Open a feedback issue](https://github.com/do-droid/seoul-essentials/issues/new?template=feedback.yml) on GitHub.
+
+**Categories:** `new_data` | `data_quality` | `coverage` | `format` | `frequency` | `other`
+
 ## Data Sources
 
 All data sourced from official Seoul government open data:
