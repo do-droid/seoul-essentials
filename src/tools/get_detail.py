@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 from src.data.api_client import get_detail as _api_detail
+from src.tools.analytics import track_usage
 
 
+@track_usage
 def get_place_detail(id: str) -> dict | str:
     """Get full details of a specific place or subway station in Seoul by its ID.
 

@@ -1,0 +1,38 @@
+name: Feedback
+description: Submit feedback about Seoul Essentials data quality, coverage, or feature requests
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - new_data — Request new data types
+        - data_quality — Report inaccurate or outdated data
+        - coverage — Request geographic expansion
+        - format — Report data format issues
+        - frequency — Report stale data
+        - other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please describe the feedback in detail.
+      placeholder: "e.g., EV charging station data would be very useful for tourists with rental cars."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - low
+        - medium
+        - high
+    validations:
+      required: true

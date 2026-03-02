@@ -3,8 +3,10 @@ from __future__ import annotations
 from typing import Literal
 
 from src.data.api_client import get_subway_timetable as _api_subway
+from src.tools.analytics import track_usage
 
 
+@track_usage
 def get_subway_timetable(
     station: str,
     line: str | None = None,

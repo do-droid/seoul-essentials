@@ -46,7 +46,23 @@ def _get(path: str, params: dict | None = None) -> dict:
         resp.raise_for_status()
         return resp.json()
     except httpx.HTTPStatusError as e:
-        # Try to parse error body
+        try:
+            return e.response.json()
+        except Exception:
+            return {"error": f"HTTP {e.response.status_code}: {e.response.text[:200]}"}
+    except httpx.RequestError as e:
+        return {"error": f"Request failed: {e}"}
+
+
+def _post(path: str, body: dict) -> dict:
+    """POST request to the API. Returns parsed JSON or error dict."""
+    if _client is None:
+        return {"error": "API client not initialized. Set API_BASE_URL env var."}
+    try:
+        resp = _client.post(path, json=body)
+        resp.raise_for_status()
+        return resp.json()
+    except httpx.HTTPStatusError as e:
         try:
             return e.response.json()
         except Exception:
@@ -116,6 +132,28 @@ def get_subway_timetable(
     if "error" in data:
         return data
     return data.get("results", []) if "results" in data else [data]
+
+
+def post_feedback(category: str, message: str, priority: str = "medium") -> dict:
+    """Call POST /feedback."""
+    return _post("/feedback", {
+        "category": category,
+        "message": message,
+        "priority": priority,
+    })
+
+
+def post_analytics(event: dict) -> None:
+    """Call POST /analytics. Fire-and-forget — failures are silently ignored."""
+    try:
+        _post("/analytics", event)
+    except Exception:
+        pass
+
+
+def get_analytics(days: int = 7) -> dict:
+    """Call GET /analytics."""
+    return _get("/analytics", params={"days": str(days)})
 
 
 def health_check() -> dict:
