@@ -2,6 +2,10 @@
 
 Essential public facility data for AI agents helping foreign tourists in Seoul, South Korea.
 
+<a href="https://glama.ai/mcp/servers/@do-droid/seoul-essentials">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@do-droid/seoul-essentials/badge" alt="seoul-essentials MCP server" />
+</a>
+
 ## What is this?
 
 Seoul Essentials is an MCP (Model Context Protocol) server that provides structured data about essential public facilities in Seoul. Designed for AI agents that assist foreign tourists with real-time queries about nearby services.
