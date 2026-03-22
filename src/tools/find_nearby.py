@@ -19,7 +19,7 @@ def find_nearby(
         lat: Latitude of the search center point (Seoul range: ~37.4 to ~37.7).
         lng: Longitude of the search center point (Seoul range: ~126.7 to ~127.2).
         radius_m: Search radius in meters (100-5000, default 500).
-        type: Optional filter by facility type — "toilet", "pharmacy", "wifi", "aed", or "tourist_info".
+        type: Optional filter by facility type — "toilet", "pharmacy", "wifi", "aed", "tourist_info", or "baeknyeon" (century-old shops).
         limit: Maximum number of results to return (1-20, default 5).
 
     Returns:

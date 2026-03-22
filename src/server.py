@@ -18,6 +18,7 @@ mcp = FastMCP(
         "Seoul Essentials provides essential public facility data for foreign tourists visiting Seoul, South Korea. "
         "Available data: public restrooms (toilet), pharmacies with language support (pharmacy), "
         "free WiFi hotspots (wifi), AED/defibrillator locations (aed), tourist information centers (tourist_info), "
+        "century-old designated restaurants and shops (baeknyeon), "
         "and subway timetables. All data is bilingual (Korean/English). "
         "Use find_places for filtered search by type and district, "
         "get_place_detail for complete info on a specific place, "
