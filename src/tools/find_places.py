@@ -12,10 +12,17 @@ def find_places(
     filters: dict | None = None,
     limit: int = 10,
 ) -> list[dict] | dict:
-    """Search for public facilities in Seoul (restrooms, pharmacies, WiFi hotspots, AED locations, tourist info centers).
+    """Search for public facilities and points of interest in Seoul.
 
     Args:
-        type: Type of facility — "toilet", "pharmacy", "wifi", "aed", "tourist_info", or "baeknyeon" (century-old shops).
+        type: Type of facility —
+            "toilet" (public restrooms), "pharmacy" (foreign-language pharmacies),
+            "wifi" (free WiFi hotspots), "aed" (defibrillator locations),
+            "tourist_info" (tourist information centers), "baeknyeon" (century-old shops),
+            "bike" (따릉이 bike-sharing stations), "future_heritage" (Seoul Future Heritage),
+            "heritage" (designated cultural properties), "museum" (museums & galleries),
+            "park" (major parks), "taxi_stand" (taxi stands),
+            "metro_facility" (subway lockers), "tourist_zone" (tourist special zones).
         district: Seoul district name in English or Korean (e.g., "gangnam", "jongno", "강남구", "종로구").
         filters: Service-specific filters as key-value pairs. Examples: {"english": true} for pharmacies with English support, {"is_24h": true} for 24-hour restrooms, {"indoor": true} for indoor WiFi.
         limit: Maximum number of results to return (1-50, default 10).
