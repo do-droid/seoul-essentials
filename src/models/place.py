@@ -7,6 +7,9 @@ PlaceType = Literal[
     "toilet", "pharmacy", "wifi", "aed", "tourist_info", "baeknyeon",
     "bike", "future_heritage", "heritage", "museum",
     "park", "taxi_stand", "metro_facility", "tourist_zone",
+    # v4 신규
+    "post_office", "traditional_market", "halal_friendly",
+    "ev_charger", "emergency_room",
 ]
 
 
