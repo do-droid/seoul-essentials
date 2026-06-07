@@ -10,15 +10,27 @@ Essential public facility data for AI agents helping foreign tourists in Seoul, 
 
 Seoul Essentials is an MCP (Model Context Protocol) server that provides structured data about essential public facilities in Seoul. Designed for AI agents that assist foreign tourists with real-time queries about nearby services.
 
-## Available Data (22,000+ places)
+## Available Data (30,000+ places, 17 types)
 
 | Type | Description | Count |
 |------|-------------|-------|
 | `toilet` | Public restrooms across all 25 districts | 4,452 |
-| `pharmacy` | Pharmacies with foreign language support | 417 |
+| `pharmacy` | Pharmacies with foreign language support (English/Chinese/Japanese) | 417 |
 | `wifi` | Free public WiFi hotspots (Seoul WiFi) | 7,251 |
 | `aed` | AED (defibrillator) locations | 10,000 |
 | `tourist_info` | Tourist information centers | 16 |
+| `baeknyeon` | Century-old designated shops & restaurants | 168 |
+| `bike` | 따릉이 (Seoul Bike) sharing stations | ~2,700 |
+| `future_heritage` | Seoul Future Heritage sites | ~470 |
+| `heritage` | Designated cultural properties | ~600 |
+| `museum` | Museums & galleries | ~210 |
+| `park` | Major parks | ~130 |
+| `taxi_stand` | Taxi stands | ~370 |
+| `metro_facility` | Subway lockers & facilities | ~290 |
+| `tourist_zone` | Tourist special zones | 8 |
+| `post_office` | Post offices (EMS / international mail) | 227 |
+| `traditional_market` | Korean traditional markets (Gwangjang, Namdaemun, ...) | 433 |
+| `ev_charger` | EV charging stations | 187 |
 | `subway` | Subway timetables for major stations | 10 stations |
 
 ## MCP Tools
@@ -27,7 +39,7 @@ Seoul Essentials is an MCP (Model Context Protocol) server that provides structu
 Search for public facilities by type and conditions.
 
 **Parameters:**
-- `type` (required): `"toilet"` | `"pharmacy"` | `"wifi"` | `"aed"` | `"tourist_info"`
+- `type` (required): one of the 17 types listed above (e.g., `"toilet"`, `"pharmacy"`, `"post_office"`, `"traditional_market"`, `"ev_charger"`)
 - `district` (optional): Seoul district name in English or Korean (e.g., `"gangnam"`, `"강남구"`)
 - `filters` (optional): Service-specific filters (e.g., `{"english": true}`, `{"is_24h": true}`, `{"indoor": true}`)
 - `limit` (optional): Max results, 1-50 (default: 10)
@@ -90,11 +102,22 @@ uv run python -m src.server
 
 An AI agent can use these tools to answer questions like:
 
+**English**
 - "Find an English-speaking pharmacy near Gangnam Station"
 - "Where is the nearest public restroom to my location?"
 - "What's the subway schedule at Myeongdong Station?"
 - "Find free WiFi hotspots in Hongdae area"
 - "Where is the closest AED to Itaewon?"
+
+**日本語**
+- 「明洞で日本語が通じる薬局を探して」
+- 「弘大の近くで無料Wi-Fiが使える場所は？」
+- 「江南駅周辺のEV充電スポットを教えて」
+
+**中文**
+- "在明洞附近找会说中文的药店"
+- "弘大附近哪里有24小时便利的公共厕所？"
+- "梨泰院附近的清真餐厅在哪里？"
 
 ## Feedback
 
@@ -105,6 +128,12 @@ We actively review and incorporate feedback to improve data quality and coverage
 **For developers:** [Open a feedback issue](https://github.com/do-droid/seoul-essentials/issues/new?template=feedback.yml) on GitHub.
 
 **Categories:** `new_data` | `data_quality` | `coverage` | `format` | `frequency` | `other`
+
+## Known Data Limitations
+
+- **`pharmacy`**: Sourced from Seoul Open Data Plaza's "Foreign-language Capable Pharmacy Status" dataset, which lists only pharmacies that confirmed English/Chinese/Japanese service. **Gangnam-gu is not represented in the upstream dataset** (origin gap, not a parser bug). Coordinates fall back to the district centroid because the upstream rows do not carry lat/lng. We have requested expanded coverage from Seoul Open Data Plaza for the next refresh.
+- **`post_office` / `traditional_market` / `ev_charger`**: Upstream datasets do not include lat/lng. Coordinates fall back to the centroid of each Seoul district (`coordinates_approximate: true`). District-level filters (`?district=mapo`) are exact; `find_nearby` ranking against these types is district-grained rather than building-grained.
+- **Roadmap (next round)**: `halal_friendly` (data.go.kr 15111159 was withdrawn — searching alternative sources) and `emergency_room` (data.go.kr 3043449 not findable — switching to e-gen.or.kr OpenAPI) are planned for the following refresh.
 
 ## Data Sources
 
