@@ -22,7 +22,9 @@ def find_nearby(
         type: Optional filter by facility type —
             "toilet", "pharmacy", "wifi", "aed", "tourist_info", "baeknyeon",
             "bike", "future_heritage", "heritage", "museum",
-            "park", "taxi_stand", "metro_facility", "tourist_zone".
+            "park", "taxi_stand", "metro_facility", "tourist_zone",
+            "post_office", "traditional_market", "halal_friendly",
+            "ev_charger", "emergency_room".
         limit: Maximum number of results to return (1-20, default 5).
 
     Returns:

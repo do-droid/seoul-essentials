@@ -22,7 +22,12 @@ def find_places(
             "bike" (따릉이 bike-sharing stations), "future_heritage" (Seoul Future Heritage),
             "heritage" (designated cultural properties), "museum" (museums & galleries),
             "park" (major parks), "taxi_stand" (taxi stands),
-            "metro_facility" (subway lockers), "tourist_zone" (tourist special zones).
+            "metro_facility" (subway lockers), "tourist_zone" (tourist special zones),
+            "post_office" (post offices with EMS / international mail),
+            "traditional_market" (Korean traditional markets like Gwangjang, Namdaemun),
+            "halal_friendly" (halal restaurants, mosques, prayer rooms),
+            "ev_charger" (EV charging stations),
+            "emergency_room" (24/7 emergency medical centers).
         district: Seoul district name in English or Korean (e.g., "gangnam", "jongno", "강남구", "종로구").
         filters: Service-specific filters as key-value pairs. Examples: {"english": true} for pharmacies with English support, {"is_24h": true} for 24-hour restrooms, {"indoor": true} for indoor WiFi.
         limit: Maximum number of results to return (1-50, default 10).
