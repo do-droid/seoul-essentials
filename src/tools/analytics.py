@@ -41,7 +41,9 @@ def track_usage(func: Callable) -> Callable:
             if isinstance(result, list):
                 result_count = len(result)
             elif isinstance(result, dict) and "error" not in result:
-                result_count = 1
+                # payload-style responses carry their own count (e.g. subway)
+                c = result.get("count")
+                result_count = c if isinstance(c, int) else 1
 
             event = {
                 "tool": func.__name__,

@@ -120,18 +120,25 @@ def get_subway_timetable(
     line: str | None = None,
     day_type: str = "weekday",
     direction: str | None = None,
-) -> list[dict] | dict:
-    """Call GET /subway/timetable."""
+    after: str | None = None,
+    full_day: bool = False,
+    limit: int | None = None,
+) -> dict:
+    """Call GET /subway/timetable. Returns the full payload so the
+    count/note/suggestions fields survive to the agent."""
     params: dict = {"station": station, "day_type": day_type}
     if line:
         params["line"] = line
     if direction:
         params["direction"] = direction
+    if after:
+        params["after"] = after
+    if full_day:
+        params["full"] = "true"
+    if limit is not None:
+        params["limit"] = str(limit)
 
-    data = _get("/subway/timetable", params=params)
-    if "error" in data:
-        return data
-    return data.get("results", []) if "results" in data else [data]
+    return _get("/subway/timetable", params=params)
 
 
 def post_feedback(category: str, message: str, priority: str = "medium") -> dict:
