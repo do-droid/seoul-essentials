@@ -10,28 +10,30 @@ Essential public facility data for AI agents helping foreign tourists in Seoul, 
 
 Seoul Essentials is an MCP (Model Context Protocol) server that provides structured data about essential public facilities in Seoul. Designed for AI agents that assist foreign tourists with real-time queries about nearby services.
 
-## Available Data (30,000+ places, 17 types)
+## Available Data (35,000+ places, 17 types)
+
+Counts are the live Firestore document counts as of 2026-07-27.
 
 | Type | Description | Count |
 |------|-------------|-------|
-| `toilet` | Public restrooms across all 25 districts | 4,452 |
-| `pharmacy` | Pharmacies with foreign language support (English/Chinese/Japanese) | 417 |
-| `wifi` | Free public WiFi hotspots (Seoul WiFi) | 7,251 |
 | `aed` | AED (defibrillator) locations | 10,000 |
-| `tourist_info` | Tourist information centers | 16 |
-| `baeknyeon` | Century-old designated shops & restaurants | 168 |
-| `bike` | 따릉이 (Seoul Bike) sharing stations | ~2,700 |
-| `future_heritage` | Seoul Future Heritage sites | ~470 |
-| `heritage` | Designated cultural properties | ~600 |
-| `museum` | Museums & galleries | ~210 |
-| `park` | Major parks | ~130 |
-| `taxi_stand` | Taxi stands | ~370 |
-| `metro_facility` | Subway lockers & facilities | ~290 |
-| `tourist_zone` | Tourist special zones | 8 |
-| `post_office` | Post offices (EMS / international mail) | 227 |
+| `wifi` | Free public WiFi hotspots (Seoul WiFi) | 7,216 |
+| `pharmacy` | Pharmacies in all 25 districts; `?filter.english=true` narrows to the 417 with surveyed English/Chinese/Japanese service | 5,872 |
+| `toilet` | Public restrooms across all 25 districts (2,008 open 24h) | 4,418 |
+| `bike` | 따릉이 (Seoul Bike) sharing stations | 3,340 |
+| `heritage` | Designated cultural properties | 2,009 |
+| `future_heritage` | Seoul Future Heritage sites | 485 |
 | `traditional_market` | Korean traditional markets (Gwangjang, Namdaemun, ...) | 433 |
+| `metro_facility` | Subway lockers & facilities | 340 |
+| `taxi_stand` | Taxi stands | 255 |
+| `post_office` | Post offices (EMS / international mail) | 227 |
 | `ev_charger` | EV charging stations | 187 |
-| `subway` | Subway timetables for major stations | 10 stations |
+| `museum` | Museums & galleries | 171 |
+| `baeknyeon` | Century-old designated shops & restaurants | 168 |
+| `park` | Major parks | 133 |
+| `tourist_info` | Tourist information centers | 16 |
+| `tourist_zone` | Tourist special zones | 7 |
+| `subway` | Subway timetables, Lines 1–9 | 405 stations |
 
 ## MCP Tools
 
@@ -131,9 +133,10 @@ We actively review and incorporate feedback to improve data quality and coverage
 
 ## Known Data Limitations
 
-- **`pharmacy`**: Sourced from Seoul Open Data Plaza's "Foreign-language Capable Pharmacy Status" dataset, which lists only pharmacies that confirmed English/Chinese/Japanese service. **Gangnam-gu is not represented in the upstream dataset** (origin gap, not a parser bug). Coordinates fall back to the district centroid because the upstream rows do not carry lat/lng. We have requested expanded coverage from Seoul Open Data Plaza for the next refresh.
+- **`pharmacy`**: Two layers. 417 records come from Seoul Open Data Plaza's "Foreign-language Capable Pharmacy Status" survey and carry `services.english` / `chinese` / `japanese`; **Gangnam-gu is absent from that upstream survey entirely** (origin gap, not a parser bug), which is why `?filter.english=true&district=gangnam` still returns nothing. The remaining 5,455 come from the MOIS LOCALDATA licence register and cover all 25 districts with precise coordinates and phone numbers. Licence-sourced records carry `services.language_support: "not surveyed"` and deliberately omit the language keys — they are never advertised as English-capable, and `?filter.english=true` excludes them.
 - **`post_office` / `traditional_market` / `ev_charger`**: Upstream datasets do not include lat/lng. Coordinates fall back to the centroid of each Seoul district (`coordinates_approximate: true`). District-level filters (`?district=mapo`) are exact; `find_nearby` ranking against these types is district-grained rather than building-grained.
-- **Roadmap (next round)**: `halal_friendly` (data.go.kr 15111159 was withdrawn — searching alternative sources) and `emergency_room` (data.go.kr 3043449 not findable — switching to e-gen.or.kr OpenAPI) are planned for the following refresh.
+- **`toilet`**: Opening hours come from a free-text field with 234 distinct formats. 2,008 records are confirmed 24-hour; 445 publish no usable hours and carry an explanatory `hours.note` instead of open/close times.
+- **Roadmap (next round)**: `halal_friendly` (data.go.kr 15111159 was withdrawn — searching alternative sources) and `emergency_room` (data.go.kr 3043449 not findable — switching to e-gen.or.kr OpenAPI) are planned for the following refresh. Both were **removed from the tool schema in 0.4.0** — they had been advertised as valid types while holding zero documents, so every call returned an empty result.
 
 ## Data Sources
 

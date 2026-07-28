@@ -8,8 +8,9 @@ PlaceType = Literal[
     "bike", "future_heritage", "heritage", "museum",
     "park", "taxi_stand", "metro_facility", "tourist_zone",
     # v4 신규
-    "post_office", "traditional_market", "halal_friendly",
-    "ev_charger", "emergency_room",
+    "post_office", "traditional_market", "ev_charger",
+    # halal_friendly / emergency_room: 툴 스키마에는 광고됐지만 Firestore에
+    # 문서가 0건이라 항상 빈 결과였다 (v6). 데이터 적재 후 되돌릴 것.
 ]
 
 

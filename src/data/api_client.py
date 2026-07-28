@@ -76,8 +76,14 @@ def search_places(
     district: str | None = None,
     filters: dict | None = None,
     limit: int = 10,
-) -> list[dict]:
-    """Call GET /places."""
+) -> list[dict] | dict:
+    """Call GET /places.
+
+    Returns the result list, or the raw payload when the API reports an error
+    or attaches a note. Wrapping a payload without "results" in a list — the
+    previous behaviour — handed the agent an error object shaped like a place
+    and recorded it in analytics as one successful result.
+    """
     params: dict = {"type": type, "limit": str(limit)}
     if district:
         params["district"] = district
@@ -86,7 +92,9 @@ def search_places(
             params[f"filter.{k}"] = str(v).lower() if isinstance(v, bool) else str(v)
 
     data = _get("/places", params=params)
-    return data.get("results", []) if "results" in data else [data]
+    if "results" not in data:
+        return data
+    return data if data.get("note") else data["results"]
 
 
 def get_detail(place_id: str) -> dict:
@@ -100,8 +108,9 @@ def find_nearby(
     radius_m: int = 500,
     type: str | None = None,
     limit: int = 5,
-) -> list[dict]:
-    """Call GET /places/nearby."""
+) -> list[dict] | dict:
+    """Call GET /places/nearby. Error payloads are returned as-is, not wrapped
+    in a list (see search_places)."""
     params: dict = {
         "lat": str(lat),
         "lng": str(lng),
@@ -112,7 +121,9 @@ def find_nearby(
         params["type"] = type
 
     data = _get("/places/nearby", params=params)
-    return data.get("results", []) if "results" in data else [data]
+    if "results" not in data:
+        return data
+    return data if data.get("note") else data["results"]
 
 
 def get_subway_timetable(

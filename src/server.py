@@ -16,7 +16,8 @@ mcp = FastMCP(
     name="seoul-essentials",
     instructions=(
         "Seoul Essentials provides essential public facility data for foreign tourists visiting Seoul, South Korea. "
-        "Available data (19 types): public restrooms (toilet), pharmacies with language support (pharmacy), "
+        "Available data (17 types): public restrooms (toilet), pharmacies citywide with a "
+        "foreign-language flag (pharmacy), "
         "free WiFi hotspots (wifi), AED/defibrillator locations (aed), tourist information centers (tourist_info), "
         "century-old designated restaurants and shops (baeknyeon), "
         "따릉이 bike-sharing stations (bike), Seoul Future Heritage sites (future_heritage), "
@@ -25,9 +26,7 @@ mcp = FastMCP(
         "subway lockers (metro_facility), tourist special zones (tourist_zone), "
         "post offices with EMS / international mail (post_office), "
         "Korean traditional markets such as Gwangjang and Namdaemun (traditional_market), "
-        "halal restaurants, mosques and prayer rooms (halal_friendly), "
         "EV charging stations (ev_charger), "
-        "24/7 emergency medical centers (emergency_room), "
         "and subway timetables. All data is bilingual (Korean/English). "
         "Use find_places for filtered search by type and district, "
         "get_place_detail for complete info on a specific place, "

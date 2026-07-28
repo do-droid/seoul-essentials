@@ -16,7 +16,8 @@ def find_places(
 
     Args:
         type: Type of facility —
-            "toilet" (public restrooms), "pharmacy" (foreign-language pharmacies),
+            "toilet" (public restrooms), "pharmacy" (pharmacies; filter {"english": true}
+            for ones with confirmed foreign-language support),
             "wifi" (free WiFi hotspots), "aed" (defibrillator locations),
             "tourist_info" (tourist information centers), "baeknyeon" (century-old shops),
             "bike" (따릉이 bike-sharing stations), "future_heritage" (Seoul Future Heritage),
@@ -25,9 +26,7 @@ def find_places(
             "metro_facility" (subway lockers), "tourist_zone" (tourist special zones),
             "post_office" (post offices with EMS / international mail),
             "traditional_market" (Korean traditional markets like Gwangjang, Namdaemun),
-            "halal_friendly" (halal restaurants, mosques, prayer rooms),
-            "ev_charger" (EV charging stations),
-            "emergency_room" (24/7 emergency medical centers).
+            "ev_charger" (EV charging stations).
         district: Seoul district name in English or Korean (e.g., "gangnam", "jongno", "강남구", "종로구").
         filters: Service-specific filters as key-value pairs. Examples: {"english": true} for pharmacies with English support, {"is_24h": true} for 24-hour restrooms, {"indoor": true} for indoor WiFi.
         limit: Maximum number of results to return (1-50, default 10).
