@@ -1,13 +1,12 @@
 from __future__ import annotations
 
 from src.data.api_client import search_places as _api_search
-from src.models.place import PlaceType
 from src.tools.analytics import track_usage
 
 
 @track_usage
 def find_places(
-    type: PlaceType,
+    type: str,
     district: str | None = None,
     filters: dict | None = None,
     limit: int = 10,
@@ -15,7 +14,10 @@ def find_places(
     """Search for public facilities and points of interest in Seoul.
 
     Args:
-        type: Type of facility —
+        type: Type of facility. Must be one of the values listed below; common
+            synonyms ("restroom", "lockers", "drugstore") are accepted and
+            mapped. An unrecognised value returns the valid list plus a
+            did_you_mean suggestion. Values —
             "toilet" (public restrooms), "pharmacy" (pharmacies; filter {"english": true}
             for ones with confirmed foreign-language support),
             "wifi" (free WiFi hotspots), "aed" (defibrillator locations),

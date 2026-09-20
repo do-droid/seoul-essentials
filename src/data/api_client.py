@@ -129,7 +129,7 @@ def find_nearby(
 def get_subway_timetable(
     station: str,
     line: str | None = None,
-    day_type: str = "weekday",
+    day_type: str | None = None,
     direction: str | None = None,
     after: str | None = None,
     full_day: bool = False,
@@ -137,7 +137,9 @@ def get_subway_timetable(
 ) -> dict:
     """Call GET /subway/timetable. Returns the full payload so the
     count/note/suggestions fields survive to the agent."""
-    params: dict = {"station": station, "day_type": day_type}
+    params: dict = {"station": station}
+    if day_type:
+        params["day_type"] = day_type
     if line:
         params["line"] = line
     if direction:

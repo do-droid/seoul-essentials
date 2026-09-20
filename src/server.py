@@ -27,7 +27,7 @@ mcp = FastMCP(
         "post offices with EMS / international mail (post_office), "
         "Korean traditional markets such as Gwangjang and Namdaemun (traditional_market), "
         "EV charging stations (ev_charger), "
-        "and subway timetables. All data is bilingual (Korean/English). "
+        "and subway timetables. Addresses are available in English for most records, but place NAMES are currently Korean-only except for post offices — romanize them for the user rather than expecting name.en. "
         "Use find_places for filtered search by type and district, "
         "get_place_detail for complete info on a specific place, "
         "find_nearby for GPS-based proximity search, "
