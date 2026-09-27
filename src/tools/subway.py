@@ -43,11 +43,10 @@ def get_subway_timetable(
             (clockwise) loop and "down" the outer loop — see the
             direction_labels field. If omitted, returns both.
         after: "HH:MM" (KST) — show departures from this time instead of now.
-            Times past midnight appear as 24:xx/25:xx.
+            Times past midnight appear as 24:xx/25:xx. If you pass day_type and
+            it is not what runs today, the response note starts with WARNING.
         full_day: True returns the complete day timetable (large; ~40KB per
-            line). Prefer `after` for "next train" questions. Note: the
-            response text may name this `full=true` — that is the REST
-            parameter; from this tool it is `full_day`.
+            line). Prefer `after` for "next train" questions.
         limit: Departures per direction to return (1-200, default 20).
 
     Returns:
@@ -62,7 +61,10 @@ def get_subway_timetable(
         msg = str(result["error"])
         suggestions = result.get("suggestions")
         if suggestions:
-            msg += " Did you mean: " + "; ".join(suggestions) + "."
+            # Not "Did you mean": these are nearest names in the dataset and can
+            # be a different station (Incheon Airport → 김포공항, 40 km away).
+            msg += (" Closest names in this dataset (these may be different "
+                    "stations, not a spelling of yours): " + "; ".join(suggestions) + ".")
         if result.get("note"):
             msg += " " + str(result["note"])
         return msg

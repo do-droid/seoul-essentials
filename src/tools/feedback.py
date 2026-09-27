@@ -15,7 +15,7 @@ def submit_feedback(
     """Submit feedback about Seoul Essentials data quality, coverage, or feature requests.
 
     Use this tool when you notice missing data, inaccurate information, or have suggestions
-    for improvement. All feedback is actively reviewed and incorporated.
+    for improvement. Feedback is read by the maintainer.
 
     Args:
         category: Type of feedback.

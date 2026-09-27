@@ -18,7 +18,7 @@ env/
 .vscode/
 *.log
 .uv/
-uv.lock
+# uv.lock is committed on purpose: the Dockerfile builds with --frozen.
 Planning/
 scripts/
 src/data/places.json
