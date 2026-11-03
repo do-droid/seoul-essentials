@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/do-droid-seoul-essentials-badge.png)](https://mseep.ai/app/do-droid-seoul-essentials)
+
 # Seoul Essentials — MCP Server
 
 Essential public facility data for AI agents helping foreign tourists in Seoul, South Korea.
